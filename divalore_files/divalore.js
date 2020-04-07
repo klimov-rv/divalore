@@ -44,6 +44,10 @@ var swiperMain = new Swiper('.main-slider', {
       effect: 'slide',
       spaceBetween: 0,
     },
+    900: {
+      effect: 'slide',
+      spaceBetween: 0,
+    },
     1280: {
       effect: 'coverflow',
       coverflowEffect: {
