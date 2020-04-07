@@ -790,6 +790,9 @@ figure.pants {
     margin-bottom: 19px;
 }
 
+.carousel_collections .tablinks  {
+    outline: none;
+}
 .action-block__wrap {
     border: 1px solid #e8e8e8;
     padding: 30px 0;
@@ -1176,8 +1179,7 @@ figure.pants {
     padding-left: 0;
     padding-right: 0;
 }
-.instagram__img { 
-    max-width: none;
+.instagram__img {  
     width: auto;
     object-fit: cover;
 }

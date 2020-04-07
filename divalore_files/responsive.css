@@ -125,7 +125,6 @@
     .main-wrapper {
         margin-top: 175px;
     }
-    
     .main-slider .swiper-slide {
         font-size: 19px;
     }
@@ -219,9 +218,9 @@
     }
     .half_left, .half_right {
         flex-basis: 100%;
-    }  
-    .icon__list figure.icon { 
-        width: auto; 
+    }
+    .icon__list figure.icon {
+        width: auto;
     }
 }
 
@@ -236,10 +235,10 @@
         margin: 0 3px;
     }
     .swiper-button-next {
-        right: 0;
+        right: -20px;
     }
     .swiper-button-prev {
-        left: 0;
+        left: -20px;
     }
     .swiper-button-next:after {
         left: auto;
@@ -331,25 +330,32 @@
         width: 10%;
     }
     .garderob__image_full {
-        height: 350px; 
+        height: 350px;
     }
 }
 
 @media screen and (max-width: 640px) {
-   
     .divaloreHeader__logo {
         font-size: 35px;
         text-align: center;
-    } 
+    }
     .main-slider .swiper-slide {
         font-size: 15px;
     }
     #tabSlider .swiper-wrapper {
         justify-content: flex-start;
     }
-    
     .instagram__left {
-        background-image: none; 
+        background-image: none;
+    }
+    .action-block__wrap>.row {
+        flex-wrap: wrap;
+        padding: 0 25px;
+    }
+    figure.pants, figure.needle {
+        margin-bottom: 35px;
+    }
+    .instagram__img { 
     }
 }
 
