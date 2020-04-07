@@ -27,6 +27,21 @@
 }
 
 @media screen and (max-width: 1280px) {
+    .product-img__wrap {
+        height: auto;
+    }
+    .product-img__relative {
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: 0 0 150% 0;
+    }
+    .product-img__relative .product-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-height: auto;
+    }
     .divaloreHeader__left-side {
         flex-wrap: wrap;
     }
@@ -55,6 +70,11 @@
     }
     .greeting .decor-divider {
         margin-top: 50px;
+    }
+    .js-to-top {
+        position: relative;
+        right: -90vw;
+        bottom: -10px;
     }
 }
 
@@ -194,6 +214,16 @@
     .carousel_collections .tab {
         overflow: auto;
     }
+    .half__title2 {
+        font-size: 21px;
+    }
+    .divarication__title {
+        height: auto;
+        margin-bottom: 9px;
+    }
+    .divaloreFooter_container>.row>div {
+        padding: 10px;
+    }
 }
 
 @media screen and (max-width: 900px) {
@@ -218,6 +248,7 @@
     }
     .half_left, .half_right {
         flex-basis: 100%;
+        height: 50%;
     }
     .icon__list figure.icon {
         width: auto;
@@ -293,8 +324,9 @@
     .greeting {
         margin-bottom: 150px;
     }
-    .greeting__header {
-        padding: 35px 0;
+    .greeting__header { 
+        padding-top: 35px;
+        padding-bottom: 35px;
     }
     .greeting .decor-divider {
         margin-top: 0px;
@@ -304,6 +336,7 @@
     }
     .divarication__title {
         font-size: 21px;
+        padding: 5px;
     }
     .divarication__block_wrap {
         padding: 30px 30px 40px;
@@ -323,6 +356,9 @@
     .half_right .half__img_framing {
         padding: 50px;
     }
+    .half_left .half__shadow {
+        padding: 50px 15px;
+    }
     .instagram__text {
         width: 51%;
     }
@@ -335,12 +371,19 @@
 }
 
 @media screen and (max-width: 640px) {
+    h2 {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
     .divaloreHeader__logo {
         font-size: 35px;
         text-align: center;
     }
     .main-slider .swiper-slide {
         font-size: 15px;
+    }
+    .greeting__text {
+        width: auto;
     }
     #tabSlider .swiper-wrapper {
         justify-content: flex-start;
@@ -355,13 +398,48 @@
     figure.pants, figure.needle {
         margin-bottom: 35px;
     }
-    .banner2 .half__img_full { 
+    .banner2 .half__img_full {
         height: auto;
+        min-height: 210px;
+    }
+    .promo__img_wrapper {
+        height: 400px;
+    }
+    .instagram__header {
+        line-height: 29px;
+        text-align: center;
+    }
+    .instagram__wrap .row>div:first-child {
+        align-items: center;
+        padding: 60px 10px 30px;
+    }
+    .instagram__text {
+        width: 81%;
+        text-align: center;
+    }
+    .divaloreFooter_container {
+        padding: 15px;
+    }
+    .js-to-top {
+        right: -75vw;
+        bottom: -15px;
     }
 }
 
 @media screen and (max-width: 480px) {
     .addLinks .addLinks__column:nth-child(2) {
         margin-top: 35px;
+    }
+    .text1 {
+        top: auto;
+        right: auto;
+        width: auto;
+        padding: 20%;
+    }
+    .text2 {
+        top: 45%;
+        right: auto;
+        width: auto;
+        padding: 20%;
     }
 }
