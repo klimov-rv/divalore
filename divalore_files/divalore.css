@@ -463,6 +463,7 @@ button:hover, input[type="submit"]:hover, a:not(.no-transparent):hover {
     height: 100%;
     background-color: transparent;
     opacity: 0.9;
+    outline: none;
 }
 
 .swiper-button-next {
