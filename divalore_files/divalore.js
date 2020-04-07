@@ -43,12 +43,10 @@ var swiperMain = new Swiper('.main-slider', {
     0: {
       effect: 'slide',
       spaceBetween: 0,
-      slidesPerView: 1,
     },
     900: {
       effect: 'slide',
       spaceBetween: 0,
-      slidesPerView: 1,
     },
     1280: {
       effect: 'coverflow',
@@ -62,8 +60,17 @@ var swiperMain = new Swiper('.main-slider', {
     },
   },
 
-}); 
+});
 
+
+swiperMain.on('slideChange', function (e) {
+  $(".swiper-button-prev").hide();
+  $(".swiper-button-next").hide();
+  swiperMain.on('transitionEnd', function (e) {
+    $(".swiper-button-prev").show();
+    $(".swiper-button-next").show();
+  });
+}); 
 var garderobSlider = new Swiper('.garderob-slider', {
   slidesPerView: 4,
   spaceBetween: 10,
@@ -213,7 +220,25 @@ var garderobSlider = new Swiper('.garderob-slider', {
   }); 
  
 
+  document.getElementById("defaultOpen").click();
+
+  function openTab(evt, tabName) {
+    var i, tabcontent, tablinks;
   
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+  
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }  
+  
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+
 $('select').each(function () {
 
   var $this = $(this),

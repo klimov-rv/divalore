@@ -6,6 +6,9 @@ button:hover, input[type="submit"]:hover, a:not(.no-transparent):hover {
     visibility: hidden;
     padding-right: 10px;
 }
+#page {
+    overflow: hidden;
+}
 
 .select {
     cursor: pointer;
@@ -143,7 +146,7 @@ button:hover, input[type="submit"]:hover, a:not(.no-transparent):hover {
 .header-wrapper {
     background-color: white;
     transform: translate3d(0, 0, 0);
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;

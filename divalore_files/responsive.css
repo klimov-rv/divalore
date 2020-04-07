@@ -219,6 +219,9 @@
     }
     .half_left, .half_right {
         flex-basis: 100%;
+    }  
+    .icon__list figure.icon { 
+        width: auto; 
     }
 }
 
@@ -343,6 +346,10 @@
     }
     #tabSlider .swiper-wrapper {
         justify-content: flex-start;
+    }
+    
+    .instagram__left {
+        background-image: none; 
     }
 }
 
