@@ -355,7 +355,8 @@
     figure.pants, figure.needle {
         margin-bottom: 35px;
     }
-    .instagram__img { 
+    .banner2 .half__img_full { 
+        height: auto;
     }
 }
 
