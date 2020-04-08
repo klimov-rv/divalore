@@ -34,13 +34,13 @@ button:hover, input[type="submit"]:hover, a:not(.no-transparent):hover {
 
 .styledSelect:after {
     content: "";
-    width: 0;
-    height: 0;
-    border: 5px solid transparent;
-    border-color: black transparent transparent transparent;
-    position: relative;
-    top: 10px;
-    right: -13px;
+    ;
+    position: absolute;
+    top: 6px;
+    right: 14px;
+    width: 12px;
+    height: 10px;
+    background: url("arrow_more.svg") no-repeat center center/contain transparent;
 }
 
 .styledSelect:active, .styledSelect.active {
@@ -787,6 +787,10 @@ figure.pants {
     padding: 0 0;
 }
 
+.template-is-cart .carousel_collections {
+    overflow: hidden;
+}
+
 .carousel_collections .decor-divider {
     height: 50px;
     margin-bottom: 19px;
@@ -1110,9 +1114,11 @@ figure.pants {
 .icons {
     margin-bottom: 75px;
 }
+
 .template-is-cart .icons {
-    margin-top: 75px; 
+    margin-top: 75px;
 }
+
 .icon__item {
     padding: 0 60px;
     text-align: center;
@@ -1883,8 +1889,14 @@ figure.pants {
 }
 
 .quantity-controls button {
+    color: white;
     border: 0px solid;
     flex-basis: 33%;
+    background: url("arrow_more.svg") no-repeat center center / 13px white;
+}
+
+.quantity-controls button:last-child {
+    transform: scaleY(-1);
 }
 
 .quantity-controls input {
@@ -2051,9 +2063,11 @@ figure.pants {
     align-items: center;
     margin-top: 15px;
 }
+
 .product-block.acessory .product-img__wrap {
     height: 260px;
 }
+
 .product-block.acessory .prod-title {
     font-family: Gilroy;
     text-transform: none;
@@ -2065,6 +2079,17 @@ figure.pants {
 .product-block.acessory .price {
     font-size: 14px;
     font-weight: 400;
+}
+
+#add_products {
+    width: 100%;
+    position: relative;
+}
+
+#add_products .product__list {
+    flex-wrap: nowrap;
+    width: 100%;
+    position: relative;
 }
 
 @keyframes fadeEffect {
