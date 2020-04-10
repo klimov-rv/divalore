@@ -7,8 +7,7 @@ button:hover, input[type="submit"]:hover, a:not(.no-transparent):hover {
     padding-right: 10px;
 }
 
-#page { 
-}
+#page {}
 
 .select {
     cursor: pointer;
@@ -1119,7 +1118,7 @@ figure.pants {
     margin-bottom: 75px;
 }
 
-.template-is-cart .icons {
+.template-is-product .icons, .template-is-cart .icons {
     margin-top: 75px;
 }
 
@@ -1470,8 +1469,20 @@ figure.pants {
     position: relative;
 }
 
-.product-img__relative {
+
+.gallery__item {
+    min-height: 536px;
+}
+
+.img__relative, .product-img__relative {
     position: relative;
+}
+
+.img__relative .product-img, .product-img__relative .product-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: auto;
 }
 
 .item__wrap_list .product-img__relative {
@@ -2102,13 +2113,24 @@ figure.pants {
     width: 100%;
     position: relative;
 }
-.product__grid_half-left,
-.product__grid_half-right {
+
+.product__grid_half-left, .product__grid_half-right {
     display: block;
-    position: relative; 
+    position: relative;
+}
+.product__grid_half-left .gallery {
+    justify-content: space-between;
+    overflow: hidden;
+}
+.product__grid_half-right,
+.product__grid_footer .half_right {
+    padding-left: 70px;
+}
+.product__grid_footer .half_right {
+    min-height: 700px;
 }
 .product__grid_half-right {
-    padding-left: 70px;
+    margin-bottom: 50px;
 }
 
 .product__info_1 {
@@ -2121,6 +2143,7 @@ figure.pants {
     color: #222939;
     font-size: 14px;
     font-weight: 400;
+    line-height: 11px;
 }
 
 .product__link {
@@ -2355,9 +2378,10 @@ figure.pants {
     transition: max-height 0.2s ease-out;
 }
 
-.accordion__panel:last-child { 
+.accordion__panel:last-child {
     border-bottom: 1px solid #e8e8e8;
 }
+
 .accordion__panel p {
     padding: 10px 0;
 }
@@ -2385,10 +2409,39 @@ figure.pants {
     background: transparent;
     border-bottom: 3px solid #222939;
 }
+
 .sticky {
     display: block;
     position: sticky;
     top: 110px;
+}
+.product__grid {
+    margin-bottom: 130px;
+}
+.product__grid_half-left {
+    padding-right: 5px;
+}
+
+.gallery .gallery__item {
+    margin: -5px; 
+    margin-bottom: 15px;
+}
+
+.gallery__item:first-child {
+    height: 100%;
+    min-height: 1075px;
+    margin: 0 0 15px;
+}
+.product__related {
+    position: relative;
+    margin-left: -5px;
+    margin-right: -5px;
+    width: calc(100% + 20px);
+}
+.product__related .product-block {
+    padding: 15px 5px;
+}
+.product__related .product-wrapper { 
 }
 
 @keyframes fadeEffect {
