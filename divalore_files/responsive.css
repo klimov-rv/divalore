@@ -436,6 +436,15 @@
     .summary__wrap>div:last-child {
         border-bottom: 0px solid #222939;
     }
+    .product__grid_half-right, .product__grid_footer .half_right {
+        padding-left: 0px;
+    }
+    .product__grid_half-left {
+        padding-right: 0;
+    }
+    .gallery__item:first-child {
+        min-height: 536px;
+    }
 }
 
 @media screen and (max-width: 640px) {

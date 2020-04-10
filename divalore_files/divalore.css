@@ -789,7 +789,7 @@ figure.pants {
     padding: 0 0;
 }
 
-.template-is-cart .carousel_collections, .template-is-product .carousel_collections {
+.template-is-cart .carousel_collections {
     overflow: hidden;
 }
 
@@ -1118,7 +1118,8 @@ figure.pants {
     margin-bottom: 75px;
 }
 
-.template-is-product .icons, .template-is-cart .icons {
+.template-is-product .icons, .template-is-cart .icons,
+.template-is-product .instagram {
     margin-top: 75px;
 }
 
@@ -1429,6 +1430,9 @@ figure.pants {
     padding-bottom: 10px;
 }
 
+.product.swiper-slide {
+    align-items: flex-start;
+}
 .product .product-block {
     width: 100%;
 }
