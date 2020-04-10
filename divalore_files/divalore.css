@@ -7,8 +7,7 @@ button:hover, input[type="submit"]:hover, a:not(.no-transparent):hover {
     padding-right: 10px;
 }
 
-#page {
-    overflow: hidden;
+#page { 
 }
 
 .select {
@@ -2106,8 +2105,7 @@ figure.pants {
 .product__grid_half-left,
 .product__grid_half-right {
     display: block;
-    position: relative;
-    height: 5000px;
+    position: relative; 
 }
 .product__grid_half-right {
     padding-left: 70px;
@@ -2390,7 +2388,7 @@ figure.pants {
 .sticky {
     display: block;
     position: sticky;
-    top: 30px;
+    top: 110px;
 }
 
 @keyframes fadeEffect {

@@ -27,6 +27,9 @@
 }
 
 @media screen and (max-width: 1200px) {
+    .promo__wrap {
+        overflow: hidden;
+    }
     .container {
         padding-left: 15px;
         padding-right: 15px;
