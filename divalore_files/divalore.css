@@ -243,7 +243,7 @@ button:hover, input[type="submit"]:hover, a:not(.no-transparent):hover {
 }
 
 .cart_info b {
-    padding: 0 5px;
+    padding: 0;
     line-height: 14px;
     font-size: 14px;
 }
@@ -441,7 +441,7 @@ button:hover, input[type="submit"]:hover, a:not(.no-transparent):hover {
     width: 100%;
     min-height: 100%;
     max-height: none;
-    max-width: none;
+    max-width: 100%;
 }
 
 .main-slider .swiper-slide .button1 {
@@ -449,12 +449,7 @@ button:hover, input[type="submit"]:hover, a:not(.no-transparent):hover {
     left: calc(50% - 117px);
     position: absolute;
     bottom: -25px;
-    display: none;
     z-index: 5;
-}
-
-.main-slider .swiper-slide-active .button1 {
-    display: block
 }
 
 .swiper-button-next, .swiper-button-prev {
@@ -703,6 +698,7 @@ figure.pants, figure.needle {
     margin-bottom: 0;
     margin-top: 0;
     background-repeat: no-repeat;
+    background-position: center center;
 }
 
 figure.needle {
@@ -833,6 +829,10 @@ figure.pants {
 
 .banner {
     margin-bottom: 50px;
+}
+
+.banner .half_right .half__img_framing {
+    height: 100%;
 }
 
 .banner__wrap, .banner2__wrap {
@@ -1017,7 +1017,7 @@ figure.pants {
 
 .half_right .half__img_framing {
     background: repeating-linear-gradient(107deg, #b6b6b6, #b6b6b6 1px, #fff 1px, #fff 4px);
-    height: 100%;
+    height: auto;
     padding: 80px;
 }
 
@@ -1118,8 +1118,7 @@ figure.pants {
     margin-bottom: 75px;
 }
 
-.template-is-product .icons, .template-is-cart .icons,
-.template-is-product .instagram {
+.template-is-product .icons, .template-is-cart .icons, .template-is-product .instagram {
     margin-top: 75px;
 }
 
@@ -1420,9 +1419,11 @@ figure.pants {
     padding: 17px 29px 33px;
 }
 
-.product__list {
+#rel_products .product__list, .tabcontent .product__list {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: nowrap;  
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .product {
@@ -1433,6 +1434,7 @@ figure.pants {
 .product.swiper-slide {
     align-items: flex-start;
 }
+
 .product .product-block {
     width: 100%;
 }
@@ -1473,12 +1475,25 @@ figure.pants {
     position: relative;
 }
 
+.product-img__wrap .bttn-favorite {
+    top: 28px;
+    right: 27px;
+}
+
 .product__related_header {
     font-size: 21px;
     text-align: center;
     font-family: "Playfair Display";
-    margin: 50px 0;
+    margin-top: 40px;
+    margin-bottom: 50px;
     text-transform: uppercase;
+}
+
+.product__related_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin-right: -10px;
 }
 
 .gallery__item {
@@ -1492,11 +1507,17 @@ figure.pants {
     display: block;
 }
 
-.img__relative .product-img, .product-img__relative .product-img {
+.img__relative .product-img, .product-img__relative .product-img, .half__img_full img {
     position: absolute;
     top: 0;
     left: 0;
     min-height: auto;
+}
+
+.half__img_full img {
+    padding: 0px;
+    object-fit: cover;
+    width: 100%;
 }
 
 .item__wrap_list .product-img__relative {
@@ -1526,6 +1547,7 @@ figure.pants {
     padding: 0 10px;
     background-color: #222939;
     color: white;
+    z-index: 5;
 }
 
 .stiker-new {
@@ -1610,13 +1632,26 @@ figure.pants {
     flex: 0 1 605px;
     max-height: 605px;
     align-items: center;
+    position: relative;
 }
 
 .card-bundle__item {
     display: flex;
     flex-direction: column;
     max-height: 217px;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.card-bundle__item .image-container {
+    overflow: hidden;
+}
+
+.card-bundle__item .image-container img {
+    width: auto;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
 }
 
 .card-bundle__price {
@@ -1629,7 +1664,7 @@ figure.pants {
 .card-bundle__img {
     object-fit: contain;
     max-height: 150px;
-    margin: 10px 0;
+    margin: 0;
 }
 
 .card-bundle__item_title {
@@ -1672,12 +1707,20 @@ figure.pants {
     font-weight: 300;
 }
 
+.prod-type {
+    color: #222939;
+    font-family: Gilroy;
+    font-size: 14px;
+    font-weight: 300;
+}
+
 .prod-title {
     color: #222939;
     font-family: "Playfair Display";
     font-size: 16px;
     font-weight: 400;
     text-transform: uppercase;
+    margin: 0 0 15px;
 }
 
 .price_old {
@@ -1712,6 +1755,7 @@ figure.pants {
     border: 0px solid;
     font-size: 13px;
     font-weight: 300;
+    z-index: 5;
 }
 
 .bttn-favorite.is-added {
@@ -1719,10 +1763,15 @@ figure.pants {
 }
 
 .product-block_hidden .bttn-favorite {
-    top: 19px;
-    right: 22px;
+    top: 18px;
+    right: 23px;
     line-height: 13px;
     font-size: 13px;
+}
+
+.card-bundle .bttn-favorite {
+    top: 28px;
+    right: 27px;
 }
 
 .product-name-block .underline {
@@ -2116,10 +2165,15 @@ figure.pants {
     font-size: 14px;
     font-weight: 400;
 }
-#rel_products,
-#add_products {
-    width: 100%;
+
+#gallery__slider, #rel_products, #add_products {
+    width: calc(100% + 10px);
     position: relative;
+    left: 5px;
+}
+
+#gallery__slider {
+    margin-top: 10px;
 }
 
 #add_products .product__list {
@@ -2140,10 +2194,6 @@ figure.pants {
 
 .product__grid_half-right, .product__grid_footer .half_right {
     padding-left: 70px;
-}
-
-.product__grid_footer .half_right {
-    min-height: 700px;
 }
 
 .product__grid_half-right {
@@ -2213,6 +2263,11 @@ figure.pants {
     padding: 3px 15px;
     text-transform: uppercase;
     white-space: nowrap;
+}
+
+.bundle__artic:hover, .product__artic:hover {
+    color: black;
+    text-decoration: underline;
 }
 
 .item__info_wrap button {
@@ -2407,16 +2462,25 @@ figure.pants {
     margin-top: 10px;
 }
 
-.product__info_2 a.other_link {
+.product__info_2 {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.other_link {
     color: #222939;
     font-size: 13px;
     font-weight: 700;
     text-transform: uppercase;
     position: relative;
     margin-right: 70px;
+    white-space: nowrap;
+    line-height: 15px;
+    margin-bottom: 30px;
 }
 
-.product__info_2 a.other_link:after {
+.other_link:after {
     content: '';
     position: absolute;
     bottom: -10px;
@@ -2425,6 +2489,10 @@ figure.pants {
     height: 27px;
     background: transparent;
     border-bottom: 3px solid #222939;
+}
+
+.other_link:last-child {
+    margin-right: 0;
 }
 
 .sticky {
@@ -2460,10 +2528,17 @@ figure.pants {
 }
 
 .product__related .product-block {
-    padding: 15px 5px;
+    padding: 0 10px 15px 0;
 }
 
-.product__related .product-wrapper {}
+.product__grid_footer .product__related {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.product__grid_footer .half__img_full {
+    padding: 0 0 107% 0;
+}
 
 @keyframes fadeEffect {
     0% {
