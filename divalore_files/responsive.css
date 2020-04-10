@@ -296,6 +296,9 @@
     .divaloreHeader__icon {
         margin: 0 3px;
     }
+    .promo__img_wrapper {
+        height: 500px;
+    }
     .swiper-button-next {
         right: -35px;
     }
