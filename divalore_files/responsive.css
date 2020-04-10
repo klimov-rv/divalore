@@ -27,7 +27,7 @@
 }
 
 @media screen and (max-width: 1200px) {
-    .promo__wrap {
+    .template-is-index .main-wrapper { 
         overflow: hidden;
     }
     .container {
