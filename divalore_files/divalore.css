@@ -2390,7 +2390,7 @@ figure.pants {
 .sticky {
     display: block;
     position: sticky;
-    top: 150px;
+    top: 30px;
 }
 
 @keyframes fadeEffect {
