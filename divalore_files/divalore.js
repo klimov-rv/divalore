@@ -1,16 +1,40 @@
+
+
+//	Mmenu
+var menu = new MmenuLight(
+  document.querySelector('#menu'),
+  'all'
+);
+
+var navigator = menu.navigation({ 
+});
+
+var drawer = menu.offcanvas({ 
+});
+
+document.querySelector('a[href="#menu"]')
+  .addEventListener('click', evnt => {
+    evnt.preventDefault();
+    drawer.open();
+  });
+
+//	шапка
+
 function scroll() {
   if ($(this).scrollTop() > 130) {
     $(".header-wrapper").addClass("scrolled")
   } else {
     $(".header-wrapper").removeClass("scrolled")
   }
-} 
+}
 
 document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("load", scroll);
   window.addEventListener("scroll", scroll);
 });
 
+
+//	кастомные селект оптионс
 
 $('select').each(function () {
 
@@ -49,9 +73,16 @@ $('select').each(function () {
 
   $listItems.click(function (e) {
     e.stopPropagation();
+    if ($(this).closest(".select").has("#currency").length)  { 
+      $(".curr__icon").removeClass("show");
+      $(".curr_" + $(this).attr('rel')).addClass("show");
+    }  
     $styledSelect.text($(this).text()).removeClass('active');
     $this.val($(this).attr('rel'));
     $list.hide();
+  });
+  
+  $listItems.click(function (e) {
   });
 
   $(document).click(function () {
@@ -60,4 +91,10 @@ $('select').each(function () {
   });
 
 });
- 
+  
+$(".divaloreHeader__icon.search").click(function () {
+  $(".search_widget").addClass("search_opened"); 
+});
+$(".search_widget .close").one("click", function(event) {
+  $(".search_widget").removeClass("search_opened"); 
+});
