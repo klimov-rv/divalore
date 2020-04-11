@@ -316,6 +316,7 @@
     .main-wrapper {
         margin-top: 55px;
         padding: 0;
+        overflow: hidden;
     }
     .divaloreHeader__icon {
         margin: 0 3px;

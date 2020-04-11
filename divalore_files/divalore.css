@@ -1671,6 +1671,7 @@ figure.pants {
     color: #222939;
     font-size: 14px;
     font-weight: 300;
+    text-align: left;
 }
 
 .bundle__price {
@@ -2169,7 +2170,7 @@ figure.pants {
 #gallery__slider, #rel_products, #add_products {
     width: calc(100% + 10px);
     position: relative;
-    left: 5px;
+    left: -5px;
 }
 
 #gallery__slider {
@@ -2539,7 +2540,54 @@ figure.pants {
 .product__grid_footer .half__img_full {
     padding: 0 0 107% 0;
 }
-
+.catalog__header {
+    margin: 0 auto -5px;
+    padding-top: 25px;
+}
+.collection-filter-and-sort {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    height: auto;
+    margin: 0;
+}
+.collection-filter-and-sort .collection-filter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 75%;
+    flex: 1 1 75%;
+    margin: 0;
+}
+.collection-filter-and-sort .collection-filter .filter {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 11%;
+    flex: 0 1 11%;
+    border: 1px solid transparent;
+    position: relative;
+    padding: 0;
+    white-space: nowrap;
+}
+.collection-filter .filter-title, .collection-filter .label-field, .collection-order-wrapper .filter-title, .collection-order-wrapper .label-field {
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 400;
+}
+.collection-filter-and-sort .collection-filter .filter .filter-title span {
+    padding: 25px 0 25px 25px;
+    margin-right: -20px;
+    font-size: 12px;
+}
+.filter-title span {
+    cursor: pointer;
+}
+.collection-filter-and-sort .collection-filter [type="button"] {
+    padding: 19px 25px 21px;
+    border: 0px solid;
+}
 @keyframes fadeEffect {
     0% {
         opacity: 0;

@@ -18,2017 +18,602 @@
   <script src="//css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
   <![endif]-->
     <link rel="stylesheet" type="text/css" href="divalore_files/normalise.css">
-    <link rel="stylesheet" type="text/css" href="divalore_files/font-awesome.all.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="divalore_files/font-awesome.all.min.css" />
     <link rel="stylesheet" type="text/css" href="divalore_files/fonts.css">
     <link rel="stylesheet" type="text/css" href="divalore_files/spider.css">
     <link rel="stylesheet" type="text/css" href="divalore_files/theme.css">
-    <link rel="stylesheet" type="text/css" href="divalore_files/swiper.css">
     <link rel="stylesheet" type="text/css" href="divalore_files/aos.css" />
     <link rel="stylesheet" type="text/css" href="divalore_files/divalore.css">
-    <link rel="stylesheet" type="text/css" href="divalore_files/responsive.css"> 
-    <link type="text/css" rel="stylesheet" href="divalore_files/mmenu-light.css" />
+    <link rel="stylesheet" type="text/css" href="divalore_files/responsive.css">
+    <link type="text/css" rel="stylesheet"
+        href="divalore_files/mmenu-light.css" />
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"
+        type="text/javascript"></script>
 </head>
 
-<body class="template-is- not-index-page dom-ready window-load">
-<div id="page"> 
-    <div class="header-wrapper">
-        <header class="divaloreHeader container_narrow" data-aos="fade-down">
-            <div class="row">
-                    
-                <a class="burger-mobile hide show-sm cell-1-sm" href="#menu"><span></span></a>
-                <div class="divaloreHeader__left-side cell-4 cell-4-md hide-sm">
-                    <div class="currency">
-                        <select name="select-box" id="currency" class="select">
-                            <option value="RUB" name="value1">RUB (РУБ)
-                            </option>
-                            <option value="EUR" name="value1">EUR (ЕВРО)
-                            </option>
-                            <option value="USD" name="value1">USD (Долл)
-                            </option>
-                        </select>
-                    </div>
-                    <div class="location">
-                        <select name="select-box2" id="location_phone"
-                            class="select">
-                            <option value="location_phone" name="value1">Москва
-                                +7
-                                495 123
-                                45 67</option>
-                            <option value="location_phone" name="value2">
-                                Санкт-Петербур +7
-                                555 321
-                                77 00</option>
-                            <option value="location_phone" name="value3">Пенза
-                                +7
-                                900 3000 767</option>
-                        </select>
-                    </div>
-                </div>
- 
-                <a href="index.html"
-                    class="divaloreHeader__logo cell-2 cell-4-md cell-5-sm cell-10-xs inline-middle" href="/"
-                    title="divalore">
-                    di Valore</a>
+<body class="template-is-product not-index-page dom-ready window-load">
+    <div id="page">
+        <div class="header-wrapper">
+            <header class="divaloreHeader container_narrow"
+                data-aos="fade-down">
+                <div class="row">
 
-                <div class="divaloreHeader__icons cell-4 cell-4-md cell-6-sm cell-1-xs">
-                    <div class="divaloreHeader__icon hide-xs search">
-                        <span class="icon-search-black white"></span>
-                        <form action="/search" method="get"
-                            class="search_widget">
-                            <div class="inpt-group">
-                                <input type="text" autocomplete="off"
-                                    class="inpt-control inpt search_widget-control"
-                                    name="q" value="" placeholder="Поиск"
-                                    data-search-field="" inprocess="false">
-                                <button type="submit"
-                                    class="bttn-prim inpt-group-addon search_widget-submit">
-                                    <span
-                                        class="icon-search-black white"></span>
-                            </div>
-                            <input type="hidden" name="lang" value="ru">
-                            <div class="search_widget-result">
-                                <div data-search-result=""
-                                    class="search_widget-result-inner"></div>
-                            </div>
-                        </form>
-                    </div>
-
-                    <a href="/page/favorites"
-                        class="divaloreHeader__icon hide-xs favorites">
-                        <span data-favorites-counter="5"
-                            class="is-full">5</span>
-                    </a>
-
-                    <a href="/client_account/login"
-                        class="divaloreHeader__icon hide-xs login">
-                    </a>
-
-                    <div class="search__top-close"></div>
-
-                    <a href="cart_items.html"
-                        class="divaloreHeader__icon cart cart-widget drop">
-                        <div class="drop-target dynamic_basket-drop">
-                            <div class="dynamic_basket js-dynamic_basket">
-                                <div class="dynamic_basket-header">
-                                    ваши покупки
-                                </div>
-                                <form action="/cart_items" method="post"
-                                    data-ajax-cart="">
-                                    <input type="hidden" name="_method"
-                                        value="put">
-                                    <input type="hidden" name="make_order"
-                                        value=""
-                                        class=" js-giftd-checkout-start  js-giftd-block-2 "
-                                        data-giftd-block-id-checkout="2">
-                                    <div class="dynamic_basket-list">
-                                        <div
-                                            class="dynamic_basket-empty text-center">
-                                            Корзина пуста
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
+                    <a class="burger-mobile hide show-sm cell-1-sm"
+                        href="#menu"><span></span></a>
+                    <div
+                        class="divaloreHeader__left-side cell-4 cell-4-md hide-sm">
+                        <div class="currency">
+                            <select name="select-box" id="currency"
+                                class="select">
+                                <option value="RUB" name="value1">RUB (РУБ)
+                                </option>
+                                <option value="EUR" name="value1">EUR (ЕВРО)
+                                </option>
+                                <option value="USD" name="value1">USD (Долл)
+                                </option>
+                            </select>
                         </div>
-                        <span class="cart_info">
-                            <b data-cartman-positions-count="">1</b> 
-                            <div class="cart_summ hide-xs">(18 000
-                                р.)</div>
-                        </span>
-                    </a>
-                </div>
-            </div>
-            <div class="divaloreHeader__mainnav hide-sm">
-                <ul>
-                    <li class="menu__item--current"><a class="menu__link" href="card_complect.html">костюмы и пиджаки</a></li>
-                    <li class="menu__item"><a class="menu__link" href="card.html">сорочки</a></li>
-                    <li class="menu__item"><a class="menu__link" href="catalog.html">верхняя одежда</a></li>
-                    <li class="menu__item"><a class="menu__link" href="#">обувь</a></li>
-                    <li class="menu__item"><a class="menu__link" href="#">аксессуары</a></li>
-                    <li class="menu__item"><a class="menu__link" href="#">услуги ателье</a></li>
-                    <li class="menu__item"><a class="menu__link" href="#">наше ателье</a></li>
-                    <li class="menu__item"><a class="menu__link" href="#">акции</a></li>
-                    <li class="menu__item"><a class="menu__link" href="#">отзывы</a></li>
-                    <li class="menu__item"><a class="menu__link" href="#">контакты</a></li>
-                </ul>
-            </div>
-
-            <nav id="menu" data-divalore-title="Di Valore">
-                <ul>
-                    <li class="Selected"><a href="#">Home</a></li>
-                    <li><span>About us</span>
-                        <ul>
-                            <li><a href="#about/history">History</a></li>
-                            <li><span>The team</span>
-                                <ul>
-                                    <li><a href="#about/team/management">Management</a></li>
-                                    <li><a href="#about/team/sales">Sales</a></li>
-                                    <li><a href="#about/team/development">Development</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#about/address">Our address</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-    </div>
-    
-    <div class="content">
-        <div class="main-wrapper">
-            <section class="promo" data-aos="fade-in">
-                <div class="promo__wrap container_narrow">
-                    <div class="swiper-slider">
-
-                        <div class="swiper-container main-slider">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="promo__img_wrapper">
-                                        <img src="divalore_files/slide1.jpg" alt="">
-                                    </div>
-                                    <span class="promo_text text1">У вас никогда не будет
-                                        второго
-                                        шанса</span>
-                                    <span class="promo_text text2">произвести <br> первое
-                                        впечатление...</span>
-                                    <a href="" class="button1 button--ujarak">узнать больше</a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="promo__img_wrapper">
-                                        <img src="divalore_files/slide2.jpg" alt="">
-                                    </div>
-                                    <a href="" class="button1 button--ujarak">Подробнее</a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="promo__img_wrapper">
-                                        <img src="divalore_files/slide3.jpg" alt="">
-                                    </div>
-                                    <span class="promo_text text3">У вас никогда не будет
-                                        второго
-                                        шанса</span>
-                                    <span class="promo_text text4">произвести <br> первое
-                                        впечатление...</span>
-                                    <a href="" class="button1 button--ujarak">узнать больше</a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="promo__img_wrapper">
-                                        <img src="divalore_files/slide1.jpg" alt="">
-                                    </div>
-                                    <a href="" class="button1 button--ujarak">узнать больше</a>
-                                </div>
-                            </div>
-                            <!-- Add Arrows -->
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
+                        <div class="location">
+                            <select name="select-box2" id="location_phone"
+                                class="select">
+                                <option value="location_phone" name="value1">
+                                    Москва
+                                    +7
+                                    495 123
+                                    45 67</option>
+                                <option value="location_phone" name="value2">
+                                    Санкт-Петербур +7
+                                    555 321
+                                    77 00</option>
+                                <option value="location_phone" name="value3">
+                                    Пенза
+                                    +7
+                                    900 3000 767</option>
+                            </select>
                         </div>
                     </div>
 
-            </section>
+                    <a href="index.html"
+                        class="divaloreHeader__logo cell-2 cell-4-md cell-5-sm cell-10-xs inline-middle"
+                        href="/" title="divalore">
+                        di Valore</a>
 
-            <section class="greeting" data-aos="fade-in">
-                <h2 class="greeting__header">добро пожаловать <br> в магазин-ателье
-                    Di Valore</h2>
-                <div class="greeting__wrap container">
-                    <div class="decor-divider"></div>
-                    <p class="greeting__text">В нашем магазине Вы найдете одежду
-                        современного и актуального стиля, который подчеркивает
-                        индивидеальность каждого человека <br>
-                        Также Вы можете подшить и подогнать уже купленный костюм до
-                        идеальной посадки</p>
-                    <div class="row is-grid divarication__wrapper">
-                        <div class="cell-3 cell-6-md push-1-sm cell-10-sm" data-aos="flip-left"
-                            data-aos-delay="50">
-                            <div class="divarication">
-                                <div class="divarication__block">
-                                    <div class="divarication__block_wrap">
-                                        <figure
-                                            class="divarication__icon divarication__icon_1">
-                                        </figure>
-                                        <h3 class="divarication__title">оптовым
-                                            клиентам
-                                        </h3>
+                    <div
+                        class="divaloreHeader__icons cell-4 cell-4-md cell-6-sm cell-1-xs">
+                        <div class="divaloreHeader__icon hide-xs search">
+                            <span class="icon-search-black white"></span>
+                            <form action="/search" method="get"
+                                class="search_widget">
+                                <div class="inpt-group">
+                                    <input type="text" autocomplete="off"
+                                        class="inpt-control inpt search_widget-control"
+                                        name="q" value="" placeholder="Поиск"
+                                        data-search-field="" inprocess="false">
+                                    <button type="submit"
+                                        class="bttn-prim inpt-group-addon search_widget-submit">
                                         <span
-                                            class="divarication__text">Индивидуальный
-                                            подход к
-                                            каждому партнеру, наиболее выгодные
-                                            условия
-                                            сотрудничества</span>
-                                        <a href=""
-                                            class="divarication__button button2">зарегистрироваться</a>
+                                            class="icon-search-black white"></span>
+                                </div>
+                                <input type="hidden" name="lang" value="ru">
+                                <div class="search_widget-result">
+                                    <div data-search-result=""
+                                        class="search_widget-result-inner">
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="cell-3 cell-6-md push-1-sm cell-10-sm" data-aos="flip-left"
-                            data-aos-delay="150">
-                            <div class="divarication">
-                                <div class="divarication__block">
-                                    <div class="divarication__block_wrap">
-                                        <figure
-                                            class="divarication__icon divarication__icon_2">
-                                        </figure>
-                                        <h3 class="divarication__title">подобрать
-                                            <br>
-                                            костюм</h3>
-                                        <span class="divarication__text">В нашем
-                                            магазине Вы
-                                            найдете одежду современного и
-                                            актуального
-                                            стиля,
-                                            который подчеркивает индивидеальность
-                                            каждого
-                                            человека</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cell-3 cell-6-md push-1-sm cell-10-sm" data-aos="flip-left"
-                            data-aos-delay="250">
-                            <div class="divarication">
-                                <div class="divarication__block">
-                                    <div class="divarication__block_wrap">
-                                        <figure
-                                            class="divarication__icon divarication__icon_3">
-                                        </figure>
-                                        <h3 class="divarication__title">подобрать
-                                            аксессуары
-                                        </h3>
-                                        <span class="divarication__text">В нашем
-                                            магазине Вы
-                                            найдете одежду современного и
-                                            актуального
-                                            стиля,
-                                            который подчеркивает индивидеальность
-                                            каждого
-                                            человека</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cell-3 cell-6-md push-1-sm cell-10-sm" data-aos="flip-left"
-                            data-aos-delay="350">
-                            <div class="divarication">
-                                <div class="divarication__block">
-                                    <div class="divarication__block_wrap">
-                                        <figure
-                                            class="divarication__icon divarication__icon_4">
-                                        </figure>
-                                        <h3 class="divarication__title">подогнать
-                                            костюм
-                                            по
-                                            фигуре</h3>
-                                        <span class="divarication__text">Также Вы
-                                            можете
-                                            подшить
-                                            и подогнать уже купленный костюм до
-                                            идеальной
-                                            посадки</span>
-                                        <a href=""
-                                            class="divarication__button button2">оставить
-                                            заявку</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="carousel" data-aos="fade-in">
-                <div class="carousel_collections container_narrow">
-                    <h2>ИДЕАЛЬНЫЙ СОЮЗ ГАРМОНИИ И ЭЛЕГАНТНОСТИ</h2>
-                    <div class="decor-divider"></div>
-                    <!-- Slider main container -->
-                    <div class="swiper-container garderob-slider push-1-sm cell-10-sm post-1-sm">
-                        <!-- Additional required wrapper -->
-                        <div class="swiper-wrapper">
-                            <!-- Slides -->
-                            <div class="swiper-slide">
-                                <div class="garderob__image_full">
-                                    <img class="swiper-lazy"
-                                        src="divalore_files/collect_1.jpg" alt="">
-                                    <div class="garderob__image_shadow">
-                                        <a href="#" class="garderob__collection">костюмы
-                                        </a>
-                                        <a href="#" class="garderob__title">новая
-                                            элегантность
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="garderob__image_full">
-                                    <img class="swiper-lazy"
-                                        src="divalore_files/collect_2.jpg" alt="">
-                                    <div class="garderob__image_shadow">
-                                        <div class="garderob__collection">костюмы
-                                        </div>
-                                        <div class="garderob__title">новая
-                                            элегантность
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="garderob__image_full">
-                                    <img class="swiper-lazy"
-                                        src="divalore_files/collect_3.jpg" alt="">
-                                    <div class="garderob__image_shadow">
-                                        <div class="garderob__collection">костюмы
-                                        </div>
-                                        <div class="garderob__title">новая
-                                            элегантность
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="garderob__image_full">
-                                    <img class="swiper-lazy"
-                                        src="divalore_files/collect_4.jpg" alt="">
-                                    <div class="garderob__image_shadow">
-                                        <div class="garderob__collection">костюмы
-                                        </div>
-                                        <div class="garderob__title">новая
-                                            элегантность
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="garderob__image_full">
-                                    <img class="swiper-lazy"
-                                        src="divalore_files/collect_5.jpg" alt="">
-                                    <div class="garderob__image_shadow">
-                                        <div class="garderob__collection">сорочки
-                                        </div>
-                                        <div class="garderob__title">природные
-                                            оттенки
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="garderob__image_full">
-                                    <img class="swiper-lazy"
-                                        src="divalore_files/collect_6.jpg" alt="">
-                                    <div class="garderob__image_shadow">
-                                        <div class="garderob__collection">костюмы
-                                        </div>
-                                        <div class="garderob__title">новая
-                                            элегантность
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- If we need navigation buttons -->
-                        <div class="swiper-button-prev"> </div>
-                        <div class="prev-shadow"></div>
-                        <div class="swiper-button-next"> </div>
-                        <div class="next-shadow"></div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="action-block" data-aos="fade-in">
-                <div class="action-block__wrap container_narrow">
-                    <div class="row">
-                        <div class="cell-3 cell-4-md cell-3-sm cell-12-xs">
-                            <figure class="needle push-4 cell-8 push-0-md cell-12-md">
-                            </figure>
-                        </div>
-                        <div class="cell-7 cell-6-md cell-7-sm cell-12-xs">
-                            <h3 class="action-block_title">Бесплатный укорот брюк
-                                при
-                                покупке костюма</h3>
-                            <p class="action-block_text">При примерке нового костюма
-                                у
-                                нас в магазине наши консультанты подскажут, нужно
-                                что-либо менять в изделии либо нет. Вам больше не
-                                придется тратить время и силы на поиск достойной
-                                мастерской. Мастера салона сделают необходимую
-                                коррекцию
-                                в кратчайшие сроки. </p>
-                            <a href="" class="action-block_link">Обновите гардероб
-                                без
-                                проблем</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="banner" data-aos="fade-in">          
-                <div class="banner__flip-wrap container_narrow hide show-md" data-aos="zoom-in">
-                    <div class="banner__wrap">
-                        <div class="half_left">
-                            <div class="half__img_full"
-                                style="background: url('divalore_files/banner__left-img.png') no-repeat center center / cover transparent;">
-                                <div class="half__shadow">
-                                    <a href="" class="bttn_favorite"></a>
-                                    <a href="#">
-                                        <h3 class="half__title divaloreStyle">di
-                                            valore</h3>
-                                    </a>
-                                    <p class="half__text1">ЭНЕРГИЯ, ДИНАМИЗМ И
-                                        СТРАСТЬ: <br>
-                                        ОКУНИСЬ В КОЛЛЕКЦИЮ оксфорд</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="half_right">
-                            <div class="half__img_framing">
-                                <div class="half__img_full"
-                                    style="background: url('divalore_files/banner__right-img.jpg') no-repeat top center / cover transparent;">
-                                    <div class="half__shadow">
-                                        <p class="half__text2">Новая <br>
-                                            Элегантность</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> 
-                </div>
-                <div class="banner__flip-wrap container_narrow hide-md" data-aos="zoom-in">
-                    <div class="banner__wrap" id="no-flip">
-                        <div class="half_left">
-                            <div class="half__img_full"
-                                style="background-image: url('divalore_files/banner__left-img.png');">
-                                <div class="half__shadow">
-                                    <a href="" class="bttn_favorite"></a>
-                                    <a href="#">
-                                        <h3 class="half__title divaloreStyle">di
-                                            valore</h3>
-                                    </a>
-                                    <p class="half__text1">ЭНЕРГИЯ, ДИНАМИЗМ И
-                                        СТРАСТЬ: <br>
-                                        ОКУНИСЬ В КОЛЛЕКЦИЮ оксфорд</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="half_right">
-                            <div class="half__img_framing">
-                                <div class="half__img_full"
-                                    style="background-image: url('divalore_files/banner__right-img.jpg');">
-                                    <div class="half__shadow">
-                                        <p class="half__text2">Новая <br>
-                                            Элегантность</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="banner__wrap cover flip-front">
-                        <div class="half_left">
-                            <div class="half__img_full"
-                            style="background-image: url('divalore_files/banner__right-img.jpg');">
-                                <div class="half__shadow">
-                                    <p class="half__text2">Новая <br>
-                                        Элегантность</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="half_right">
-                            <div class="half__img_framing">
-                                <div class="half__img_full"
-                                    style="background-image: url('divalore_files/banner__right-img.jpg');">
-                                    <div class="half__shadow">
-                                        <p class="half__text2">Новая <br>
-                                            Элегантность</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="banner__wrap cover flip-back">
-                        <div class="half_left">
-                            <div class="half__img_full"
-                                style="background: repeating-linear-gradient(107deg, #b78b69, #b78b69 1px, #a98161 1px, #a98161 4px); ">
-                                <div class="decor-divider white"></div>
-                                <h3 class="half__title divaloreStyle">di valore</h3>
-                                <p class="half__text1">ЭНЕРГИЯ, ДИНАМИЗМ И СТРАСТЬ:
-                                    <br>
-                                    ОКУНИСЬ В КОЛЛЕКЦИЮ оксфорд</p>
-                                <div class="decor-divider white"></div>
-
-                            </div>
-                        </div>
-                        <div class="half_right">
-                            <div class="half__img_framing">
-                                <div class="half__img_full"
-                                    style="background-image: url('divalore_files/banner__right-img.jpg');">
-                                    <div class="half__shadow">
-                                        <p class="half__text2">Новая <br>
-                                            Элегантность</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
- 
-            <section class="carousel" data-aos="fade-in">
-                <div class="carousel_collections container">
-                    <h2>создай свой образ</h2>
-                    <div class="decor-divider"></div>
-                    <div class="tab" id="tabSlider">
-                        <div class="swiper-wrapper">
-                            <button class="tablinks swiper-slide" onclick="openTab(event, 'tab-0')"
-                                id="defaultOpen">воплощение элегантности</button>
-                            <button class="tablinks swiper-slide"
-                                onclick="openTab(event, 'tab-1')">гармония
-                                цвета</button>
-                            <button class="tablinks swiper-slide"
-                                onclick="openTab(event, 'tab-2')">праздничный
-                                выход</button>
-                            <button class="tablinks swiper-slide"
-                                onclick="openTab(event, 'tab-3')">практичные
-                                решения</button>
-                        </div>
-                    </div>
-                    <div class="tabs-content">
-                        <div id="tab-0" class="tabcontent">
-                            <ul class="product__list swiper-wrapper row is-grid">
-                                <li class="product swiper-slide">
-                                    <form class="product-block card cards-col"
-                                        action="/" method="post" data-product-id="">
-                                        <div class="product-wrapper">
-                                            <div class="product-img__wrap">
-                                                <div class="product__stick stiker-new ">Новинка</div>
-                                                <div class="product__variants-count">+ 3 цвета</div>
-                                                <button type="button"
-                                                class="bttn-favorite is-added"
-                                                data-favorites-trigger=""></button>
-                                                <a href="#" class="product-img__relative">
-                                                    <img class="product-img"
-                                                        src="divalore_files/prod_1.jpg"
-                                                        alt=" ">
-                                                </a>
-                                            </div>
-                                            <div class="product-name-block">
-                                                <a href="#">
-                                                    <div class="prod-title_wrap">
-                                                        <span
-                                                            class="prod-type">Костюм
-                                                            однобортный</span>
-                                                        <span
-                                                            class="prod-title">Шеффилд</span>
-                                                    </div>
-                                                    <div class="price_wrap">
-                                                        <b class="price">
-                                                            12 200 р.
-                                                        </b>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </form>
-                                    <form
-                                        class="product-block_hidden hide-sm card cards-col"
-                                        action="/" method="post" data-product-id="">
-                                        <div class="card__bundle_wrap">
-                                            <div class="bundle row">
-                                                <button type="button"
-                                                class="bttn-favorite"
-                                                data-favorites-trigger="">В
-                                                избранное</button>
-                                                <a href="#"
-                                                    class="bundle__item cell-6">
-                                                    <img class="bundle__img"
-                                                        src="divalore_files/bundle_1.jpg"
-                                                        alt=" ">
-                                                    <span
-                                                        class="bundle__item_title">Пиджак
-                                                        однобортный</span>
-                                                    <span class="bundle__price">
-                                                        4 800 р.
-                                                    </span>
-                                                </a>
-
-                                                <a href="#"
-                                                    class="bundle__item cell-6">
-                                                    <img class="bundle__img"
-                                                        src="divalore_files/bundle_2.jpg"
-                                                        alt=" ">
-                                                    <span
-                                                        class="bundle__item_title">Пиджак
-                                                        однобортный</span>
-                                                    <span class="bundle__price">
-                                                        4 800 р.
-                                                    </span>
-                                                </a>
-
-                                                <a href="#"
-                                                    class="bundle__item cell-6">
-                                                    <img class="bundle__img"
-                                                        src="divalore_files/bundle_3.jpg"
-                                                        alt=" ">
-                                                    <span
-                                                        class="bundle__item_title">Пиджак
-                                                        однобортный</span>
-                                                    <span class="bundle__price">
-                                                        4 800 р.
-                                                    </span>
-                                                </a>
-
-                                                <a href="#"
-                                                    class="bundle__item cell-6">
-                                                    <img class="bundle__img"
-                                                        src="divalore_files/bundle_4.jpg"
-                                                        alt=" ">
-                                                    <span
-                                                        class="bundle__item_title">Пиджак
-                                                        однобортный</span>
-                                                    <span class="bundle__price">
-                                                        4 800 р.
-                                                    </span>
-                                                </a>
-                                            </div>
-                                            <div class="product-name-block">
-                                                <a href="#">
-                                                    <div class="prod-title_wrap">
-                                                        <span
-                                                            class="prod-type">Комплект
-                                                            с
-                                                            полуприталенным
-                                                            силуэтом</span>
-                                                        <span
-                                                            class="prod-title">Шеффилд
-                                                        </span>
-                                                    </div>
-                                                    <div class="price_wrap">
-                                                        <s class="price_old">
-                                                            57 900 р.
-                                                        </s>
-                                                        <b class="price">
-                                                            35 200 р.
-                                                        </b>
-                                                    </div> 
-                                                    <a href="#"
-                                                        class="underline">смотреть
-                                                        комплект</a>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </li>
-                                <li class="product swiper-slide">
-                                    <form class="product-block card cards-col"
-                                        action="/" method="post" data-product-id="">
-                                        <div class="product-wrapper">
-                                            <div class="product-img__wrap">
-                                                <a href="#" class="product-img__relative">
-                                                    <img class="product-img"
-                                                        src="divalore_files/prod_1.jpg"
-                                                        alt=" ">
-                                                </a>
-                                            </div>
-                                            <div class="product-name-block">
-                                                <a href="#">
-                                                    <div class="prod-title_wrap">
-                                                        <span
-                                                            class="prod-type">Костюм
-                                                            однобортный</span>
-                                                        <span
-                                                            class="prod-title">оксфорд</span>
-                                                    </div>
-                                                    <div class="price_wrap">
-                                                        <b class="price">
-                                                            12 200 р.
-                                                        </b>
-                                                    </div>
-                                                    <button type="button"
-                                                        class="bttn-favorite"
-                                                        data-favorites-trigger=""></button>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </form>
-                                    <form
-                                        class="product-block_hidden hide-sm card cards-col"
-                                        action="/" method="post" data-product-id="">
-                                        <div class="product-wrapper">
-                                            <div class="product-img__wrap">
-                                                <a href="#" class="product-img__relative">
-                                                    <img class="product-img"
-                                                        src="divalore_files/prod_7.jpg"
-                                                        alt=" ">
-                                                </a>
-                                            </div>
-                                            <div class="product-name-block">
-                                                <a href="#">
-                                                    <div class="prod-title_wrap">
-                                                        <span
-                                                            class="prod-type">Костюм
-                                                            однобортный</span>
-                                                        <span
-                                                            class="prod-title">оксфорд</span>
-                                                    </div>
-                                                    <div class="price_wrap">
-                                                        <b class="price">
-                                                            12 200 р.
-                                                        </b>
-                                                    </div>
-                                                    <button type="button"
-                                                        class="bttn-favorite"
-                                                        data-favorites-trigger="">В
-                                                        избранное</button>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </li>
-                                <li class="product swiper-slide">
-                                    <form class="product-block card cards-col"
-                                        action="/" method="post" data-product-id="">
-                                        <div class="product-wrapper">
-                                            <div class="product-img__wrap">
-                                                <a href="#" class="product-img__relative">
-                                                    <img class="product-img"
-                                                        src="divalore_files/prod_3.jpg"
-                                                        alt=" ">
-                                                </a>
-                                            </div>
-                                            <div class="product-name-block">
-                                                <a href="#">
-                                                    <div class="prod-title_wrap">
-                                                        <span
-                                                            class="prod-type">Костюм
-                                                            однобортный</span>
-                                                        <span
-                                                            class="prod-title">Шеффилд</span>
-                                                    </div>
-                                                    <div class="product__info">
-                                                        <span> 25% лён</span>
-                                                        <span> 25% шерсть</span>
-                                                        <span> 50% вискоза</span>
-                                                    </div>
-                                                    <div class="price_wrap">
-                                                        <b class="price">
-                                                            12 200 р.
-                                                        </b>
-                                                    </div>
-                                                    <button type="button"
-                                                        class="bttn-favorite"
-                                                        data-favorites-trigger=""></button>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </form>
-                                    <form
-                                        class="product-block_hidden hide-sm card cards-col"
-                                        action="/" method="post" data-product-id="">
-                                        <div class="product-wrapper">
-                                            <div class="product-img__wrap">
-                                                <a href="#" class="product-img__relative">
-                                                    <img class="product-img"
-                                                        src="divalore_files/prod_1.jpg"
-                                                        alt=" ">
-                                                </a>
-                                            </div>
-                                            <div class="product-name-block">
-                                                <a href="#">
-                                                    <div class="prod-title_wrap">
-                                                        <span
-                                                            class="prod-type">Костюм
-                                                            однобортный</span>
-                                                        <span
-                                                            class="prod-title">Шеффилд</span>
-                                                    </div>
-                                                    <div class="product__info">
-                                                        <span> 25% лён</span>
-                                                        <span> 25% шерсть</span>
-                                                        <span> 50% вискоза</span>
-                                                    </div>
-                                                    <div class="price_wrap">
-                                                        <b class="price">
-                                                            12 200 р.
-                                                        </b>
-                                                    </div>
-                                                    <button type="button"
-                                                        class="bttn-favorite"
-                                                        data-favorites-trigger="">В
-                                                        избранное</button>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </li>
-                                <li class="product swiper-slide">
-                                    <form class="product-block card cards-col"
-                                        action="/" method="post" data-product-id="">
-                                        <div class="product-wrapper">
-                                            <div class="product-img__wrap">
-                                                <a href="#" class="product-img__relative">
-                                                    <img class="product-img"
-                                                        src="divalore_files/prod_2.jpg"
-                                                        alt=" ">
-                                                </a>
-                                            </div>
-                                            <div class="product-name-block">
-                                                <a href="#">
-                                                    <div class="prod-title_wrap">
-                                                        <span
-                                                            class="prod-type">Костюм
-                                                            однобортный</span>
-                                                        <span
-                                                            class="prod-title">Шеффилд</span>
-                                                    </div>
-                                                    <div class="price_wrap">
-                                                        <b class="price">
-                                                            12 200 р.
-                                                        </b>
-                                                    </div>
-                                                    <button type="button"
-                                                        class="bttn-favorite"
-                                                        data-favorites-trigger=""></button>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </form>
-                                    <form
-                                        class="product-block_hidden hide-sm card cards-col"
-                                        action="/" method="post" data-product-id="">
-                                        <div class="product-wrapper">
-                                            <div class="product-img__wrap">
-                                                <a href="#" class="product-img__relative">
-                                                    <img class="product-img"
-                                                        src="divalore_files/prod_3.jpg"
-                                                        alt=" ">
-                                                </a>
-                                            </div>
-                                            <div class="product-name-block">
-                                                <a href="#">
-                                                    <div class="prod-title_wrap">
-                                                        <span
-                                                            class="prod-type">Костюм
-                                                            однобортный</span>
-                                                        <span
-                                                            class="prod-title">Шеффилд</span>
-                                                    </div>
-                                                    <div class="price_wrap">
-                                                        <b class="price">
-                                                            12 200 р.
-                                                        </b>
-                                                    </div>
-                                                    <button type="button"
-                                                        class="bttn-favorite"
-                                                        data-favorites-trigger="">В
-                                                        избранное</button>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div id="tab-1" class="tabcontent">
-                            <ul class="product__list swiper-wrapper row is-grid">
-                                <li class="product swiper-slide">
-                                    <form class="product-block card cards-col"
-                                        action="/" method="post" data-product-id="">
-                                        <div class="product-wrapper">
-                                            <div class="product-img__wrap">
-                                                <a href="#" class="product-img__relative">
-                                                    <img class="product-img"
-                                                        src="divalore_files/prod_5.jpg"
-                                                        alt=" ">
-                                                </a>
-                                            </div>
-                                            <div class="product-name-block">
-                                                <a href="#">
-                                                    <div class="prod-title_wrap">
-                                                        <span
-                                                            class="prod-type">Костюм
-                                                            однобортный</span>
-                                                        <span
-                                                            class="prod-title">Шеффилд</span>
-                                                    </div>
-                                                    <div class="price_wrap">
-                                                        <b class="price">
-                                                            12 200 р.
-                                                        </b>
-                                                    </div>
-                                                    <button type="button"
-                                                        class="bttn-favorite"
-                                                        data-favorites-trigger=""></button>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </form>
-                                    <form
-                                        class="product-block_hidden hide-sm card cards-col"
-                                        action="/" method="post" data-product-id="">
-                                        <div class="product-wrapper">
-                                            <div class="product-img__wrap">
-                                                <a href="#" class="product-img__relative">
-                                                    <img class="product-img"
-                                                        src="divalore_files/prod_5.jpg"
-                                                        alt=" ">
-                                                </a>
-                                            </div>
-                                            <div class="product-name-block">
-                                                <a href="#">
-                                                    <div class="prod-title_wrap">
-                                                        <span
-                                                            class="prod-type">Костюм
-                                                            однобортный</span>
-                                                        <span
-                                                            class="prod-title">Шеффилд</span>
-                                                    </div>
-                                                    <div class="price_wrap">
-                                                        <b class="price">
-                                                            12 200 р.
-                                                        </b>
-                                                    </div>
-                                                    <button type="button"
-                                                        class="bttn-favorite"
-                                                        data-favorites-trigger="">В
-                                                        избранное</button>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </li>
-                                <li class="product swiper-slide">
-                                    <form class="product-block card cards-col"
-                                        action="/" method="post" data-product-id="">
-                                        <div class="product-wrapper">
-                                            <div class="product-img__wrap">
-                                                <a href="#" class="product-img__relative">
-                                                    <img class="product-img"
-                                                        src="divalore_files/prod_4.jpg"
-                                                        alt=" ">
-                                                </a>
-                                            </div>
-                                            <div class="product-name-block">
-                                                <a href="#">
-                                                    <div class="prod-title_wrap">
-                                                        <span
-                                                            class="prod-type">Костюм
-                                                            однобортный</span>
-                                                        <span
-                                                            class="prod-title">Шеффилд</span>
-                                                    </div>
-                                                    <div class="price_wrap">
-                                                        <b class="price">
-                                                            12 200 р.
-                                                        </b>
-                                                    </div>
-                                                    <button type="button"
-                                                        class="bttn-favorite"
-                                                        data-favorites-trigger=""></button>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </form>
-                                    <form
-                                        class="product-block_hidden hide-sm card cards-col"
-                                        action="/" method="post" data-product-id="">
-                                        <div class="product-wrapper">
-                                            <div class="product-img__wrap">
-                                                <a href="#" class="product-img__relative">
-                                                    <img class="product-img"
-                                                        src="divalore_files/prod_6.jpg"
-                                                        alt=" ">
-                                                </a>
-                                            </div>
-                                            <div class="product-name-block">
-                                                <a href="#">
-                                                    <div class="prod-title_wrap">
-                                                        <span
-                                                            class="prod-type">Костюм
-                                                            однобортный</span>
-                                                        <span
-                                                            class="prod-title">Шеффилд</span>
-                                                    </div>
-                                                    <div class="price_wrap">
-                                                        <b class="price">
-                                                            12 200 р.
-                                                        </b>
-                                                    </div>
-                                                    <button type="button"
-                                                        class="bttn-favorite"
-                                                        data-favorites-trigger="">В
-                                                        избранное</button>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </li>
-                                <li class="product swiper-slide">
-                                    <form class="product-block card cards-col"
-                                        action="/" method="post" data-product-id="">
-                                        <div class="product-wrapper">
-                                            <div class="product-img__wrap">
-                                                <a href="#" class="product-img__relative">
-                                                    <img class="product-img"
-                                                        src="divalore_files/prod_6.jpg"
-                                                        alt=" ">
-                                                </a>
-                                            </div>
-                                            <div class="product-name-block">
-                                                <a href="#">
-                                                    <div class="prod-title_wrap">
-                                                        <span
-                                                            class="prod-type">Костюм
-                                                            однобортный</span>
-                                                        <span
-                                                            class="prod-title">Шеффилд</span>
-                                                    </div>
-                                                    <div class="price_wrap">
-                                                        <b class="price">
-                                                            12 200 р.
-                                                        </b>
-                                                    </div>
-                                                    <button type="button"
-                                                        class="bttn-favorite"
-                                                        data-favorites-trigger=""></button>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </form>
-                                    <form
-                                        class="product-block_hidden hide-sm card cards-col"
-                                        action="/" method="post" data-product-id="">
-                                        <div class="product-wrapper">
-                                            <div class="product-img__wrap">
-                                                <a href="#" class="product-img__relative">
-                                                    <img class="product-img"
-                                                        src="divalore_files/prod_7.jpg"
-                                                        alt=" ">
-                                                </a>
-                                            </div>
-                                            <div class="product-name-block">
-                                                <a href="#">
-                                                    <div class="prod-title_wrap">
-                                                        <span
-                                                            class="prod-type">Костюм
-                                                            однобортный</span>
-                                                        <span
-                                                            class="prod-title">Шеффилд</span>
-                                                    </div>
-                                                    <div class="price_wrap">
-                                                        <b class="price">
-                                                            12 200 р.
-                                                        </b>
-                                                    </div>
-                                                    <button type="button"
-                                                        class="bttn-favorite"
-                                                        data-favorites-trigger="">В
-                                                        избранное</button>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </li>
-                                <li class="product swiper-slide">
-                                    <form class="product-block card cards-col"
-                                        action="/" method="post" data-product-id="">
-                                        <div class="product-wrapper">
-                                            <div class="product-img__wrap">
-                                                <a href="#" class="product-img__relative">
-                                                    <img class="product-img"
-                                                        src="divalore_files/prod_4.jpg"
-                                                        alt=" ">
-                                                </a>
-                                            </div>
-                                            <div class="product-name-block">
-                                                <a href="#">
-                                                    <div class="prod-title_wrap">
-                                                        <span
-                                                            class="prod-type">Костюм
-                                                            однобортный</span>
-                                                        <span
-                                                            class="prod-title">Шеффилд</span>
-                                                    </div>
-                                                    <div class="price_wrap">
-                                                        <b class="price">
-                                                            12 200 р.
-                                                        </b>
-                                                    </div>
-                                                    <button type="button"
-                                                        class="bttn-favorite"
-                                                        data-favorites-trigger=""></button>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </form>
-                                    <form
-                                        class="product-block_hidden hide-sm card cards-col"
-                                        action="/" method="post" data-product-id="">
-                                        <div class="product-wrapper">
-                                            <div class="product-img__wrap">
-                                                <a href="#" class="product-img__relative">
-                                                    <img class="product-img"
-                                                        src="divalore_files/prod_4.jpg"
-                                                        alt=" ">
-                                                </a>
-                                            </div>
-                                            <div class="product-name-block">
-                                                <a href="#">
-                                                    <div class="prod-title_wrap">
-                                                        <span
-                                                            class="prod-type">Костюм
-                                                            однобортный</span>
-                                                        <span
-                                                            class="prod-title">Шеффилд</span>
-                                                    </div>
-                                                    <div class="price_wrap">
-                                                        <b class="price">
-                                                            12 200 р.
-                                                        </b>
-                                                    </div>
-                                                    <button type="button"
-                                                        class="bttn-favorite"
-                                                        data-favorites-trigger="">В
-                                                        избранное</button>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div id="tab-2" class="tabcontent">
-                            <ul class="product__list swiper-wrapper row is-grid">
-                                <li class="product swiper-slide">
-                                    <form class="product-block card cards-col"
-                                        action="/" method="post" data-product-id="">
-                                        <div class="product-wrapper">
-                                            <div class="product-img__wrap">
-                                                <a href="#" class="product-img__relative">
-                                                    <img class="product-img"
-                                                        src="divalore_files/prod_5.jpg"
-                                                        alt=" ">
-                                                </a>
-                                            </div>
-                                            <div class="product-name-block">
-                                                <a href="#">
-                                                    <div class="prod-title_wrap">
-                                                        <span
-                                                            class="prod-type">Костюм
-                                                            однобортный</span>
-                                                        <span
-                                                            class="prod-title">Шеффилд</span>
-                                                    </div>
-                                                    <div class="price_wrap">
-                                                        <b class="price">
-                                                            12 200 р.
-                                                        </b>
-                                                    </div>
-                                                    <button type="button"
-                                                        class="bttn-favorite"
-                                                        data-favorites-trigger=""></button>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </form>
-                                    <form
-                                        class="product-block_hidden hide-sm card cards-col"
-                                        action="/" method="post" data-product-id="">
-                                        <div class="product-wrapper">
-                                            <div class="product-img__wrap">
-                                                <a href="#" class="product-img__relative">
-                                                    <img class="product-img"
-                                                        src="divalore_files/prod_5.jpg"
-                                                        alt=" ">
-                                                </a>
-                                            </div>
-                                            <div class="product-name-block">
-                                                <a href="#">
-                                                    <div class="prod-title_wrap">
-                                                        <span
-                                                            class="prod-type">Костюм
-                                                            однобортный</span>
-                                                        <span
-                                                            class="prod-title">Шеффилд</span>
-                                                    </div>
-                                                    <div class="price_wrap">
-                                                        <b class="price">
-                                                            12 200 р.
-                                                        </b>
-                                                    </div>
-                                                    <button type="button"
-                                                        class="bttn-favorite"
-                                                        data-favorites-trigger="">В
-                                                        избранное</button>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </li>
-                                <li class="product swiper-slide">
-                                    <form class="product-block card cards-col"
-                                        action="/" method="post" data-product-id="">
-                                        <div class="product-wrapper">
-                                            <div class="product-img__wrap">
-                                                <a href="#" class="product-img__relative">
-                                                    <img class="product-img"
-                                                        src="divalore_files/prod_4.jpg"
-                                                        alt=" ">
-                                                </a>
-                                            </div>
-                                            <div class="product-name-block">
-                                                <a href="#">
-                                                    <div class="prod-title_wrap">
-                                                        <span
-                                                            class="prod-type">Костюм
-                                                            однобортный</span>
-                                                        <span
-                                                            class="prod-title">Шеффилд</span>
-                                                    </div>
-                                                    <div class="price_wrap">
-                                                        <b class="price">
-                                                            12 200 р.
-                                                        </b>
-                                                    </div>
-                                                    <button type="button"
-                                                        class="bttn-favorite"
-                                                        data-favorites-trigger=""></button>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </form>
-                                    <form
-                                        class="product-block_hidden hide-sm card cards-col"
-                                        action="/" method="post" data-product-id="">
-                                        <div class="product-wrapper">
-                                            <div class="product-img__wrap">
-                                                <a href="#" class="product-img__relative">
-                                                    <img class="product-img"
-                                                        src="divalore_files/prod_6.jpg"
-                                                        alt=" ">
-                                                </a>
-                                            </div>
-                                            <div class="product-name-block">
-                                                <a href="#">
-                                                    <div class="prod-title_wrap">
-                                                        <span
-                                                            class="prod-type">Костюм
-                                                            однобортный</span>
-                                                        <span
-                                                            class="prod-title">Шеффилд</span>
-                                                    </div>
-                                                    <div class="price_wrap">
-                                                        <b class="price">
-                                                            12 200 р.
-                                                        </b>
-                                                    </div>
-                                                    <button type="button"
-                                                        class="bttn-favorite"
-                                                        data-favorites-trigger="">В
-                                                        избранное</button>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </li>
-                                <li class="product swiper-slide">
-                                    <form class="product-block card cards-col"
-                                        action="/" method="post" data-product-id="">
-                                        <div class="product-wrapper">
-                                            <div class="product-img__wrap">
-                                                <a href="#" class="product-img__relative">
-                                                    <img class="product-img"
-                                                        src="divalore_files/prod_6.jpg"
-                                                        alt=" ">
-                                                </a>
-                                            </div>
-                                            <div class="product-name-block">
-                                                <a href="#">
-                                                    <div class="prod-title_wrap">
-                                                        <span
-                                                            class="prod-type">Костюм
-                                                            однобортный</span>
-                                                        <span
-                                                            class="prod-title">Шеффилд</span>
-                                                    </div>
-                                                    <div class="price_wrap">
-                                                        <b class="price">
-                                                            12 200 р.
-                                                        </b>
-                                                    </div>
-                                                    <button type="button"
-                                                        class="bttn-favorite"
-                                                        data-favorites-trigger=""></button>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </form>
-                                    <form
-                                        class="product-block_hidden hide-sm card cards-col"
-                                        action="/" method="post" data-product-id="">
-                                        <div class="product-wrapper">
-                                            <div class="product-img__wrap">
-                                                <a href="#" class="product-img__relative">
-                                                    <img class="product-img"
-                                                        src="divalore_files/prod_7.jpg"
-                                                        alt=" ">
-                                                </a>
-                                            </div>
-                                            <div class="product-name-block">
-                                                <a href="#">
-                                                    <div class="prod-title_wrap">
-                                                        <span
-                                                            class="prod-type">Костюм
-                                                            однобортный</span>
-                                                        <span
-                                                            class="prod-title">Шеффилд</span>
-                                                    </div>
-                                                    <div class="price_wrap">
-                                                        <b class="price">
-                                                            12 200 р.
-                                                        </b>
-                                                    </div>
-                                                    <button type="button"
-                                                        class="bttn-favorite"
-                                                        data-favorites-trigger="">В
-                                                        избранное</button>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </li>
-                                <li class="product swiper-slide">
-                                    <form class="product-block card cards-col"
-                                        action="/" method="post" data-product-id="">
-                                        <div class="product-wrapper">
-                                            <div class="product-img__wrap">
-                                                <a href="#" class="product-img__relative">
-                                                    <img class="product-img"
-                                                        src="divalore_files/prod_4.jpg"
-                                                        alt=" ">
-                                                </a>
-                                            </div>
-                                            <div class="product-name-block">
-                                                <a href="#">
-                                                    <div class="prod-title_wrap">
-                                                        <span
-                                                            class="prod-type">Костюм
-                                                            однобортный</span>
-                                                        <span
-                                                            class="prod-title">Шеффилд</span>
-                                                    </div>
-                                                    <div class="price_wrap">
-                                                        <b class="price">
-                                                            12 200 р.
-                                                        </b>
-                                                    </div>
-                                                    <button type="button"
-                                                        class="bttn-favorite"
-                                                        data-favorites-trigger=""></button>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </form>
-                                    <form
-                                        class="product-block_hidden hide-sm card cards-col"
-                                        action="/" method="post" data-product-id="">
-                                        <div class="product-wrapper">
-                                            <div class="product-img__wrap">
-                                                <a href="#" class="product-img__relative">
-                                                    <img class="product-img"
-                                                        src="divalore_files/prod_4.jpg"
-                                                        alt=" ">
-                                                </a>
-                                            </div>
-                                            <div class="product-name-block">
-                                                <a href="#">
-                                                    <div class="prod-title_wrap">
-                                                        <span
-                                                            class="prod-type">Костюм
-                                                            однобортный</span>
-                                                        <span
-                                                            class="prod-title">Шеффилд</span>
-                                                    </div>
-                                                    <div class="price_wrap">
-                                                        <b class="price">
-                                                            12 200 р.
-                                                        </b>
-                                                    </div>
-                                                    <button type="button"
-                                                        class="bttn-favorite"
-                                                        data-favorites-trigger="">В
-                                                        избранное</button>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div id="tab-3" class="tabcontent">
-                            <ul class="product__list swiper-wrapper row is-grid">
-                                <li class="product swiper-slide">
-                                    <form class="product-block card cards-col"
-                                        action="/" method="post" data-product-id="">
-                                        <div class="product-wrapper">
-                                            <div class="product-img__wrap">
-                                                <a href="#" class="product-img__relative">
-                                                    <img class="product-img"
-                                                        src="divalore_files/prod_5.jpg"
-                                                        alt=" ">
-                                                </a>
-                                            </div>
-                                            <div class="product-name-block">
-                                                <a href="#">
-                                                    <div class="prod-title_wrap">
-                                                        <span
-                                                            class="prod-type">Костюм
-                                                            однобортный</span>
-                                                        <span
-                                                            class="prod-title">Шеффилд</span>
-                                                    </div>
-                                                    <div class="price_wrap">
-                                                        <b class="price">
-                                                            12 200 р.
-                                                        </b>
-                                                    </div>
-                                                    <button type="button"
-                                                        class="bttn-favorite"
-                                                        data-favorites-trigger=""></button>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </form>
-                                    <form
-                                        class="product-block_hidden hide-sm card cards-col"
-                                        action="/" method="post" data-product-id="">
-                                        <div class="product-wrapper">
-                                            <div class="product-img__wrap">
-                                                <a href="#" class="product-img__relative">
-                                                    <img class="product-img"
-                                                        src="divalore_files/prod_5.jpg"
-                                                        alt=" ">
-                                                </a>
-                                            </div>
-                                            <div class="product-name-block">
-                                                <a href="#">
-                                                    <div class="prod-title_wrap">
-                                                        <span
-                                                            class="prod-type">Костюм
-                                                            однобортный</span>
-                                                        <span
-                                                            class="prod-title">Шеффилд</span>
-                                                    </div>
-                                                    <div class="price_wrap">
-                                                        <b class="price">
-                                                            12 200 р.
-                                                        </b>
-                                                    </div>
-                                                    <button type="button"
-                                                        class="bttn-favorite"
-                                                        data-favorites-trigger="">В
-                                                        избранное</button>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </li>
-                                <li class="product swiper-slide">
-                                    <form class="product-block card cards-col"
-                                        action="/" method="post" data-product-id="">
-                                        <div class="product-wrapper">
-                                            <div class="product-img__wrap">
-                                                <a href="#" class="product-img__relative">
-                                                    <img class="product-img"
-                                                        src="divalore_files/prod_4.jpg"
-                                                        alt=" ">
-                                                </a>
-                                            </div>
-                                            <div class="product-name-block">
-                                                <a href="#">
-                                                    <div class="prod-title_wrap">
-                                                        <span
-                                                            class="prod-type">Костюм
-                                                            однобортный</span>
-                                                        <span
-                                                            class="prod-title">Шеффилд</span>
-                                                    </div>
-                                                    <div class="price_wrap">
-                                                        <b class="price">
-                                                            12 200 р.
-                                                        </b>
-                                                    </div>
-                                                    <button type="button"
-                                                        class="bttn-favorite"
-                                                        data-favorites-trigger=""></button>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </form>
-                                    <form
-                                        class="product-block_hidden hide-sm card cards-col"
-                                        action="/" method="post" data-product-id="">
-                                        <div class="product-wrapper">
-                                            <div class="product-img__wrap">
-                                                <a href="#" class="product-img__relative">
-                                                    <img class="product-img"
-                                                        src="divalore_files/prod_6.jpg"
-                                                        alt=" ">
-                                                </a>
-                                            </div>
-                                            <div class="product-name-block">
-                                                <a href="#">
-                                                    <div class="prod-title_wrap">
-                                                        <span
-                                                            class="prod-type">Костюм
-                                                            однобортный</span>
-                                                        <span
-                                                            class="prod-title">Шеффилд</span>
-                                                    </div>
-                                                    <div class="price_wrap">
-                                                        <b class="price">
-                                                            12 200 р.
-                                                        </b>
-                                                    </div>
-                                                    <button type="button"
-                                                        class="bttn-favorite"
-                                                        data-favorites-trigger="">В
-                                                        избранное</button>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </li>
-                                <li class="product swiper-slide">
-                                    <form class="product-block card cards-col"
-                                        action="/" method="post" data-product-id="">
-                                        <div class="product-wrapper">
-                                            <div class="product-img__wrap">
-                                                <a href="#" class="product-img__relative">
-                                                    <img class="product-img"
-                                                        src="divalore_files/prod_6.jpg"
-                                                        alt=" ">
-                                                </a>
-                                            </div>
-                                            <div class="product-name-block">
-                                                <a href="#">
-                                                    <div class="prod-title_wrap">
-                                                        <span
-                                                            class="prod-type">Костюм
-                                                            однобортный</span>
-                                                        <span
-                                                            class="prod-title">Шеффилд</span>
-                                                    </div>
-                                                    <div class="price_wrap">
-                                                        <b class="price">
-                                                            12 200 р.
-                                                        </b>
-                                                    </div>
-                                                    <button type="button"
-                                                        class="bttn-favorite"
-                                                        data-favorites-trigger=""></button>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </form>
-                                    <form
-                                        class="product-block_hidden hide-sm card cards-col"
-                                        action="/" method="post" data-product-id="">
-                                        <div class="product-wrapper">
-                                            <div class="product-img__wrap">
-                                                <a href="#" class="product-img__relative">
-                                                    <img class="product-img"
-                                                        src="divalore_files/prod_7.jpg"
-                                                        alt=" ">
-                                                </a>
-                                            </div>
-                                            <div class="product-name-block">
-                                                <a href="#">
-                                                    <div class="prod-title_wrap">
-                                                        <span
-                                                            class="prod-type">Костюм
-                                                            однобортный</span>
-                                                        <span
-                                                            class="prod-title">Шеффилд</span>
-                                                    </div>
-                                                    <div class="price_wrap">
-                                                        <b class="price">
-                                                            12 200 р.
-                                                        </b>
-                                                    </div>
-                                                    <button type="button"
-                                                        class="bttn-favorite"
-                                                        data-favorites-trigger="">В
-                                                        избранное</button>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </li>
-                                <li class="product swiper-slide">
-                                    <form class="product-block card cards-col"
-                                        action="/" method="post" data-product-id="">
-                                        <div class="product-wrapper">
-                                            <div class="product-img__wrap">
-                                                <a href="#" class="product-img__relative">
-                                                    <img class="product-img"
-                                                        src="divalore_files/prod_4.jpg"
-                                                        alt=" ">
-                                                </a>
-                                            </div>
-                                            <div class="product-name-block">
-                                                <a href="#">
-                                                    <div class="prod-title_wrap">
-                                                        <span
-                                                            class="prod-type">Костюм
-                                                            однобортный</span>
-                                                        <span
-                                                            class="prod-title">Шеффилд</span>
-                                                    </div>
-                                                    <div class="price_wrap">
-                                                        <b class="price">
-                                                            12 200 р.
-                                                        </b>
-                                                    </div>
-                                                    <button type="button"
-                                                        class="bttn-favorite"
-                                                        data-favorites-trigger=""></button>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </form>
-                                    <form
-                                        class="product-block_hidden hide-sm card cards-col"
-                                        action="/" method="post" data-product-id="">
-                                        <div class="product-wrapper">
-                                            <div class="product-img__wrap">
-                                                <a href="#" class="product-img__relative">
-                                                    <img class="product-img"
-                                                        src="divalore_files/prod_4.jpg"
-                                                        alt=" ">
-                                                </a>
-                                            </div>
-                                            <div class="product-name-block">
-                                                <a href="#">
-                                                    <div class="prod-title_wrap">
-                                                        <span
-                                                            class="prod-type">Костюм
-                                                            однобортный</span>
-                                                        <span
-                                                            class="prod-title">Шеффилд</span>
-                                                    </div>
-                                                    <div class="price_wrap">
-                                                        <b class="price">
-                                                            12 200 р.
-                                                        </b>
-                                                    </div>
-                                                    <button type="button"
-                                                        class="bttn-favorite"
-                                                        data-favorites-trigger="">В
-                                                        избранное</button>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="action-block" data-aos="fade-in">
-                <div class="action-block__wrap container">
-                    <div class="row">
-                        <div class="cell-3 cell-5-md cell-12-xs">
-                            <figure class="pants push-4 cell-8 push-0-md cell-12-md">
-                            </figure>
-                        </div>
-                        <div class="cell-8 cell-7-md cell-12-xs">
-                            <h3 class="action-block_title">Купите две пары брюк и
-                                получите третьи в подарок</h3>
-                            <p class="action-block_text">При примерке нового костюма
-                                у
-                                нас в магазине наши консультанты подскажут, нужно
-                                что-либо менять в изделии либо нет. Вам больше не
-                                придется тратить время и силы на поиск достойной
-                                мастерской. Мастера салона сделают необходимую
-                                коррекцию
-                                в кратчайшие сроки. </p>
-                            <a href="" class="action-block_link">Обновите гардероб
-                                без
-                                проблем</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="banner2" data-aos="fade-in">
-                <div class="banner2__wrap container_wide">
-                    <div class="row is-grid">
-                        <div class="wide-half_left cell-6 cell-12-md">
-                            <div class="half__img_full"
-                                style="background-image: url('divalore_files/banner2__right-img1.jpg');">
-                                <div class="half__shadow">
-                                </div>
-                            </div>
-                            <a href="" class="button1 button--ujarak" data-aos="fade-up"
-                                data-aos-anchor-placement="bottom-bottom">перейти в
-                                каталог</a>
-                            <div class="half__title2" data-aos="fade-up"
-                                data-aos-anchor-placement="bottom-bottom">стильные
-                                аксессуары к вашему
-                                образу
-                            </div>
-                        </div>
-                        <div class="wide-half_right cell-6 cell-12-md">
-                            <div class="half__img_full"
-                                style="background-image: url('divalore_files/banner2__right-img2.jpg');">
-                                <div class="half__shadow">
-                                </div>
-                            </div>
-                            <a href="" class="button1 button--ujarak" data-aos="fade-up"
-                                data-aos-anchor-placement="bottom-bottom">узнать
-                                больше</a>
-                            <div class="half__title2" data-aos="fade-up"
-                                data-aos-anchor-placement="bottom-bottom">наш
-                                магазин-ателье</div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="icons">
-                <div class="icons_wrap container">
-                    <div class="icon__list row">
-                        <div class="icon__item cell-3 cell-6-md cell-12-xs"  data-aos="fade-in">
-                            <figure class="icon" ></figure>
-                            <span class="icon__signature">Признание более 1 миллиона
-                                клиентов
-                                по всей России</span>
-                        </div>
-                        <div class="icon__item cell-3 cell-6-md cell-12-xs" data-aos="fade-in" data-aos-delay="150">
-                            <figure class="icon"></figure>
-                            <span class="icon__signature">Размерный ряд от 46 до
-                                64</span>
-                        </div>
-                        <div class="icon__item cell-3 cell-6-md cell-12-xs" data-aos="fade-in" data-aos-delay="300">
-                            <figure class="icon"></figure>
-                            <span class="icon__signature">Classic, Casual, Smart,
-                                Sport
-                                –
-                                не ограничивайте себя одним стилем!</span>
-                        </div>
-                        <div class="icon__item cell-3 cell-6-md cell-12-xs" data-aos="fade-in" data-aos-delay="450">
-                            <figure class="icon"></figure>
-                            <span class="icon__signature">Возможность сформировать
-                                готовый образ</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="instagram">
-                <div class="instagram__wrap container"  data-aos="fade-in">
-                    <div class="row">
-                        <div class="instagram__left cell-8 cell-7-lg cell-12-md">
-                            <h5 class="instagram__header">follow <br> us in <br>
-                                instagram</h5>
-                            <a href="#" class="instagram__icon">@divalore.ru</a>
-                            <span class="instagram__text">
-                                <p class="uppercase">Узнавайте обо всех новинках и
-                                    промоакциях</b>
-                            </span>
-                            <span class="instagram__text">
-                                <p>
-                                    Ваши персональные данные будут обработаны для
-                                    предоставления <br> запрошенной Вами услуги
-                                    новостной
-                                    рассылки <br>
-                                    <b> Мы гарантируем безопасность Ваших данных</b>
-                                </p>
-                            </span>
-                            <form action="">
-                                <input class="instagram__input" type="text"
-                                    placeholder="ваш email">
-                                <button class="button1 button--ujarak">подписаться</button>
                             </form>
                         </div>
-                        <a href="#" class="instagram__right cell-4 cell-5-lg cell-12-md">
-                            <img src="divalore_files/insta1.jpg"
-                                class="instagram__img cell-6 cell-4-md cell-6-xs">
-                            <img src="divalore_files/insta2.jpg"
-                                class="instagram__img cell-6 cell-4-md cell-6-xs">
-                            <img src="divalore_files/insta3.jpg"
-                                class="instagram__img cell-6 cell-4-md cell-6-xs">
-                            <img src="divalore_files/insta4.jpg"
-                                class="instagram__img cell-6 cell-4-md cell-6-xs">
-                            <img src="divalore_files/insta5.jpg"
-                                class="instagram__img cell-6 cell-4-md cell-6-xs">
-                            <img src="divalore_files/insta6.jpg"
-                                class="instagram__img cell-6 cell-4-md cell-6-xs">
+
+                        <a href="/page/favorites"
+                            class="divaloreHeader__icon hide-xs favorites">
+                            <span data-favorites-counter=""
+                                class="is-full"></span>
+                        </a>
+
+                        <a href="/client_account/login"
+                            class="divaloreHeader__icon hide-xs login">
+                        </a>
+
+                        <div class="search__top-close"></div>
+
+                        <a href="cart_items.html"
+                            class="divaloreHeader__icon cart cart-widget drop">
+                            <div class="drop-target dynamic_basket-drop">
+                                <div class="dynamic_basket js-dynamic_basket">
+                                    <div class="dynamic_basket-header">
+                                        ваши покупки
+                                    </div>
+                                    <form action="/cart_items" method="post"
+                                        data-ajax-cart="">
+                                        <input type="hidden" name="_method"
+                                            value="put">
+                                        <input type="hidden" name="make_order"
+                                            value=""
+                                            class=" js-giftd-checkout-start  js-giftd-block-2 "
+                                            data-giftd-block-id-checkout="2">
+                                        <div class="dynamic_basket-list">
+                                            <div
+                                                class="dynamic_basket-empty text-center">
+                                                Корзина пуста
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <span class="cart_info">
+                                <b data-cartman-positions-count=""> </b>
+                                <div class="cart_summ hide-xs"> </div>
+                            </span>
                         </a>
                     </div>
                 </div>
-            </section>
-
-            <section class="addHelp">
-                <div class="container" data-aos="fade-in">
-                    <h2 class="addHelp__title">Мы можем вам помочь?</h2>
-                    <div class="decor-divider white"></div>
-                    <span class="addHelp__text">Телефон: +7 (495) 123 45 67</span>
-                    <br>
-                    <span class="addHelp__text">С понедельника по пятницу, с 11:00
-                        до
-                        21:00</span>
+                <div class="divaloreHeader__mainnav hide-sm">
+                    <ul>
+                        <li class="menu__item"><a class="menu__link"
+                                href="card_complect.html">костюмы и пиджаки</a>
+                        </li>
+                        <li class="menu__item"><a class="menu__link"
+                                href="card.html">сорочки</a></li>
+                        <li class="menu__item"><a class="menu__link"
+                                href="catalog.html">верхняя одежда</a></li>
+                        <li class="menu__item"><a class="menu__link"
+                                href="#">обувь</a></li>
+                        <li class="menu__item"><a class="menu__link"
+                                href="#">аксессуары</a></li>
+                        <li class="menu__item"><a class="menu__link"
+                                href="#">услуги ателье</a></li>
+                        <li class="menu__item"><a class="menu__link"
+                                href="#">наше ателье</a></li>
+                        <li class="menu__item"><a class="menu__link"
+                                href="#">акции</a></li>
+                        <li class="menu__item"><a class="menu__link"
+                                href="#">отзывы</a></li>
+                        <li class="menu__item"><a class="menu__link"
+                                href="#">контакты</a></li>
+                    </ul>
                 </div>
-            </section>
+                <nav id="menu" data-divalore-title="Di Valore">
+                    <ul>
+                        <li class="Selected"><a href="#">Home</a></li>
+                        <li><span>About us</span>
+                            <ul>
+                                <li><a href="#about/history">History</a></li>
+                                <li><span>The team</span>
+                                    <ul>
+                                        <li><a
+                                                href="#about/team/management">Management</a>
+                                        </li>
+                                        <li><a
+                                                href="#about/team/sales">Sales</a>
+                                        </li>
+                                        <li><a
+                                                href="#about/team/development">Development</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#about/address">Our address</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
 
-            <section class="addLinks" data-aos="fade-in">
-                <div class="container">
-                    <h2 class="addLinks__name divaloreStyle push-1" data-aos="fade-in" data-aos-delay="500">di valore</h2>
-                    <div class="row" data-aos="fade-in" data-aos-delay="500">
-                        <ul class="addLinks__column push-1 cell-2 cell-4-md cell-5-sm push-1-sm cell-10-xs">
-                            <li class="addLinks__title">компания</li>
-                            <li class="addLinks__link"><a href="#">Оформление
-                                    заказа</a></li>
-                            <li class="addLinks__link"><a href="#">Доставка
-                                    товара</a></li>
-                            <li class="addLinks__link"><a href="#">Способы
-                                    оплаты</a></li>
-                            <li class="addLinks__link"><a href="#">Возврат</a></li>
-                            <li class="addLinks__link"><a href="#">Карта сайта</a>
-                            </li>
-                        </ul>
-                        <ul class="addLinks__column cell-2 cell-4-md cell-5-sm cell-10-xs push-1-xs">
-                            <li class="addLinks__title">Помощь</li>
-                            <li class="addLinks__link"><a href="#">Оформление
-                                    заказа</a></li>
-                            <li class="addLinks__link"><a href="#">Доставка
-                                    товара</a></li>
-                            <li class="addLinks__link"><a href="#">Способы
-                                    оплаты</a></li>
-                            <li class="addLinks__link"><a href="#">Возврат</a></li>
-                            <li class="addLinks__link"><a href="#">Карта сайта</a>
-                            </li>
-                        </ul>
-                        <ul class="addLinks__column cell-2 cell-3-md push-1-sm cell-10-sm">
-                            <li class="addLinks__title">информация</li>
-                            <li class="addLinks__link"><a href="#">о нас</a></li>
-                            <li class="addLinks__link"><a href="#">отзывы</a></li>
-                            <li class="addLinks__link"><a href="#">контакты</a></li>
-                            <li class="addLinks__link"><a href="#">доставка</a></li>
-                        </ul>
-                        <ul class="addLinks__column cell-5 cell-10-md push-1-md">
-                            <li class="addLinks__title">Ателье и шоурум находятся по
-                                адресу:</li>
-                            <li class="addLinks__link">Москва, Большой Козихинский
-                                переулок, 22/2, офис 49 <a class="link-tel"
-                                    href="tel:+7 (499) 703 05 10"> +7 (499) 703 05
-                                    10</a></li>
-                            <li class="addLinks__link">Москва, Метро Павелецкая, ул.
-                                Кожевническая, д. 1 с1, офис 603
-                                <a class="link-tel" href="tel:+7 (499) 703 05 10">
-                                    +7
-                                    (499) 703 05 10</a></li>
-                            <li class="addLinks__link">Москва, Ветошный переулок, д.
-                                9.
-                                ТЦ Никольский Пассаж, 5 этаж
-                                <a class="link-tel" href="tel:+7 (499) 703 05 10">
-                                    +7
-                                    (499) 703 05 10</a></li>
-                        </ul>
+        <div class="content">
+            <div class="main-wrapper">
+                <h2 class="catalog__header">костюмы и пиджаки</h2>
+                <div class="breadcrubms container">
+                    <ul class="breadcrubms__list">
+                        <li class="breadcrumb__item"> <a title="Коллекции"
+                                href="/collection/nartist-collections">Главная</a>
+                        </li>
+                        <li class="breadcrumb__item"> <a title="Коллекции"
+                                href="/collection/nartist-collections">Каталог</a>
+                        </li>
+                        <li class="breadcrumb-item current"> Костюмы и пиджаки
+                        </li>
+                    </ul>
+                </div>
+                <div class="topline container">
+                </div>
+                <section class="catalog">
+                    <div class="container">
+                        <div class="catalog__grid row"> 
+                            <div class="collection-filter-and-sort"> 
+                                <form class="collection-filter" action="/collection/verhnyaya-odezhda" method="get" data-submit-onchange="true"> 
+                                    <!-- параметры --> 
+                                      <div class="filter js-filter-section" data-tabs-container="">
+                                        <div class="filter-title">
+                                          <span data-tab-anchor="1067699" class="is-button-close">
+                                            Статус
+                                          </span> 
+                                          <button class="filter-toggle is-button-close" type="button" data-tab-anchor="1067699">
+                                            <i class="moruicon-shevron"></i>
+                                          </button>
+                                        </div> 
+                                        <div class="filter-items-wrapper is-tab-close" data-tab-target="1067699"> 
+                                <ul class="filter-items-list is-characteristics is-checkbox"> 
+                                    <li class="filter-item">
+                                      <label class="chkbx-label">
+                                        <input class="chkbx" type="checkbox" value="69800179" name="characteristics[]">
+                                        <span class="chkbx-control"></span> 
+                                        <span>Последние экземпляры</span>
+                                      </label>
+                                    </li> 
+                                </ul> 
+                                        </div> 
+                                      </div> 
+                                      <div class="filter js-filter-section" data-tabs-container="">
+                                        <div class="filter-title">
+                                          <span data-tab-anchor="1067700" class="is-button-close">
+                                            Состав
+                                          </span> 
+                                          <button class="filter-toggle is-button-close" type="button" data-tab-anchor="1067700">
+                                            <i class="moruicon-shevron"></i>
+                                          </button>
+                                        </div> 
+                                        <div class="filter-items-wrapper is-tab-close" data-tab-target="1067700"> 
+                                <ul class="filter-items-list is-characteristics is-checkbox"> 
+                                    <li class="filter-item">
+                                      <label class="chkbx-label">
+                                        <input class="chkbx" type="checkbox" value="12276098" name="characteristics[]">
+                                        <span class="chkbx-control"></span> 
+                                        <span>Шерсть</span>
+                                      </label>
+                                    </li> 
+                                </ul> 
+                                        </div> 
+                                      </div> 
+                                      <div class="filter js-filter-section  is-close-container" data-active-filter="" data-tabs-container="">
+                                        <div class="filter-title">
+                                          <span data-tab-anchor="24632855" class="is-button-close">
+                                            Цвет
+                                          </span> 
+                                          <button class="filter-toggle is-button-close" type="button" data-tab-anchor="24632855">
+                                            <i class="moruicon-shevron"></i>
+                                          </button>
+                                        </div> 
+                                        <div class="filter-items-wrapper is-tab-close" data-tab-target="24632855"> 
+                                <ul class="filter-items-list is-characteristics is-color"> 
+                                    <li class="filter-item">
+                                      <label class="color-label">
+                                        <input type="checkbox" value="77087285" name="characteristics[]" hidden=""> 
+                                        <span title="Черный" class="filter-color" style="background-color: #000000;"> 
+                                        </span>
+                                      </label>
+                                    </li> 
+                                    <li class="filter-item">
+                                      <label class="color-label">
+                                        <input type="checkbox" value="77087504" name="characteristics[]" hidden=""> 
+                                        <span title="Серый" class="filter-color" style="background-color: #696969;"> 
+                                        </span>
+                                      </label>
+                                    </li> 
+                                    <li class="filter-item">
+                                      <label class="color-label">
+                                        <input type="checkbox" value="77089024" name="characteristics[]" hidden=""> 
+                                        <span title="Бежевый" class="filter-color" style="background-color: #C1876B;"> 
+                                        </span>
+                                      </label>
+                                    </li> 
+                                    <li class="filter-item">
+                                      <label class="color-label">
+                                        <input type="checkbox" value="77095872" checked="" name="characteristics[]" hidden=""> 
+                                        <span title="Розовато-серый" class="filter-color" style="background-color: #F78FA7;"> 
+                                        </span>
+                                      </label>
+                                    </li> 
+                                </ul> 
+                                        </div> 
+                                      </div> 
+                                    <div data-tabs-container="" class="filter js-filter-section">
+                                
+                                      <div class="filter-title">
+                                        <span data-tab-anchor="474748" class="is-button-close">
+                                          Размер
+                                        </span>
+                                
+                                        <button class="filter-toggle is-button-close" type="button" data-tab-anchor="474748">
+                                          <i class="moruicon-shevron"></i>
+                                        </button>
+                                      </div>
+                                
+                                      <div class="filter-items-wrapper is-tab-close" data-tab-target="474748"> 
+                                <ul class="filter-items-list is-options is-span"> 
+                                    <li class="filter-item">
+                                      <label class="filter-span">
+                                        <input type="checkbox" value="9814075" name="options[474748][]" hidden="">
+                                        <span class="filter-span-control">46 (M)</span>
+                                      </label>
+                                    </li> 
+                                    <li class="filter-item">
+                                      <label class="filter-span">
+                                        <input type="checkbox" value="9815914" name="options[474748][]" hidden="">
+                                        <span class="filter-span-control">Oversize</span>
+                                      </label>
+                                    </li> 
+                                    <li class="filter-item">
+                                      <label class="filter-span">
+                                        <input type="checkbox" value="9943373" name="options[474748][]" hidden="">
+                                        <span class="filter-span-control">42 (XS)</span>
+                                      </label>
+                                    </li> 
+                                </ul> 
+                                      </div> 
+                                    </div> 
+                                </form> 
+                                  <a href="/collection/verhnyaya-odezhda" class="filters-clear bttn bttn-second in-filter">Сбросить фильтры</a> 
+                                <form class="collection-order-wrapper flex-middle" action="/collection/verhnyaya-odezhda" method="get"> 
+                                  <div class="collection-order is-order"> 
+                                    <select class="slct js-filter-trigger" name="order">
+                                      <option value="" disabled="" selected="">Тип сортировки</option>
+                                      <option value="">по дате добавления</option>
+                                      <option value="price">по возрастанию цены</option>
+                                      <option value="descending_price">по убыванию цены</option>
+                                    </select> 
+                                  </div> 
+                                  <input type="hidden" name="characteristics[]" value="77095872"> 
+                                  <input type="hidden" name="price_min" value="4768"> 
+                                  <input type="hidden" name="price_max" value="15423"> 
+                                </form> 
+                                      </div>
+                        </div>
+                        <div class="catalog__text row">
+                            <div class="cell-4">стильные аксессуары 
+                                к вашему образу</div>
+                            <div class="cell-8">При примерке нового костюма у нас в магазине наши консультанты подскажут, нужно что-либо менять в изделии либо нет. Вам больше не придется тратить время и силы на поиск достойной мастерской. Мастера салона сделают необходимую коррекцию в кратчайшие сроки.  При примерке нового костюма у нас в магазине наши консультанты подскажут, нужно что-либо менять в изделии либо нет. Вам больше не придется тратить время и силы на поиск достойной мастерской. Мастера салона сделают необходимую коррекцию в кратчайшие сроки. 
+
+                                При примерке нового костюма у нас в магазине наши консультанты подскажут, нужно что-либо менять в изделии либо нет. Вам больше не придется тратить время и силы на поиск достойной мастерской. Мастера салона сделают необходимую коррекцию в кратчайшие сроки. 
+                                </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="instagram">
+                    <div class="instagram__wrap container" data-aos="fade-in">
+                        <div class="row">
+                            <div
+                                class="instagram__left cell-8 cell-7-lg cell-12-md">
+                                <h5 class="instagram__header">follow <br> us in
+                                    <br>
+                                    instagram</h5>
+                                <a href="#"
+                                    class="instagram__icon">@divalore.ru</a>
+                                <span class="instagram__text">
+                                    <p class="uppercase">Узнавайте обо всех
+                                        новинках и
+                                        промоакциях</b>
+                                </span>
+                                <span class="instagram__text">
+                                    <p>
+                                        Ваши персональные данные будут
+                                        обработаны для
+                                        предоставления <br> запрошенной Вами
+                                        услуги
+                                        новостной
+                                        рассылки <br>
+                                        <b> Мы гарантируем безопасность Ваших
+                                            данных</b>
+                                    </p>
+                                </span>
+                                <form action="">
+                                    <input class="instagram__input" type="text"
+                                        placeholder="ваш email">
+                                    <button
+                                        class="button1 button--ujarak">подписаться</button>
+                                </form>
+                            </div>
+                            <a href="#"
+                                class="instagram__right cell-4 cell-5-lg cell-12-md">
+                                <img src="divalore_files/insta1.jpg"
+                                    class="instagram__img cell-6 cell-4-md cell-6-xs">
+                                <img src="divalore_files/insta2.jpg"
+                                    class="instagram__img cell-6 cell-4-md cell-6-xs">
+                                <img src="divalore_files/insta3.jpg"
+                                    class="instagram__img cell-6 cell-4-md cell-6-xs">
+                                <img src="divalore_files/insta4.jpg"
+                                    class="instagram__img cell-6 cell-4-md cell-6-xs">
+                                <img src="divalore_files/insta5.jpg"
+                                    class="instagram__img cell-6 cell-4-md cell-6-xs">
+                                <img src="divalore_files/insta6.jpg"
+                                    class="instagram__img cell-6 cell-4-md cell-6-xs">
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <section class="addHelp">
+                    <div class="container" data-aos="fade-in">
+                        <h2 class="addHelp__title">Мы можем вам помочь?</h2>
+                        <div class="decor-divider white"></div>
+                        <span class="addHelp__text">Телефон: +7 (495) 123 45
+                            67</span>
+                        <br>
+                        <span class="addHelp__text">С понедельника по пятницу, с
+                            11:00
+                            до
+                            21:00</span>
+                    </div>
+                </section>
+
+                <section class="addLinks" data-aos="fade-in">
+                    <div class="container">
+                        <h2 class="addLinks__name divaloreStyle push-1"
+                            data-aos="fade-in" data-aos-delay="500">di valore
+                        </h2>
+                        <div class="row" data-aos="fade-in"
+                            data-aos-delay="500">
+                            <ul
+                                class="addLinks__column push-1 cell-2 cell-4-md cell-5-sm push-1-sm cell-10-xs">
+                                <li class="addLinks__title">компания</li>
+                                <li class="addLinks__link"><a
+                                        href="#">Оформление
+                                        заказа</a></li>
+                                <li class="addLinks__link"><a href="#">Доставка
+                                        товара</a></li>
+                                <li class="addLinks__link"><a href="#">Способы
+                                        оплаты</a></li>
+                                <li class="addLinks__link"><a
+                                        href="#">Возврат</a></li>
+                                <li class="addLinks__link"><a href="#">Карта
+                                        сайта</a>
+                                </li>
+                            </ul>
+                            <ul
+                                class="addLinks__column cell-2 cell-4-md cell-5-sm cell-10-xs push-1-xs">
+                                <li class="addLinks__title">Помощь</li>
+                                <li class="addLinks__link"><a
+                                        href="#">Оформление
+                                        заказа</a></li>
+                                <li class="addLinks__link"><a href="#">Доставка
+                                        товара</a></li>
+                                <li class="addLinks__link"><a href="#">Способы
+                                        оплаты</a></li>
+                                <li class="addLinks__link"><a
+                                        href="#">Возврат</a></li>
+                                <li class="addLinks__link"><a href="#">Карта
+                                        сайта</a>
+                                </li>
+                            </ul>
+                            <ul
+                                class="addLinks__column cell-2 cell-3-md push-1-sm cell-10-sm">
+                                <li class="addLinks__title">информация</li>
+                                <li class="addLinks__link"><a href="#">о нас</a>
+                                </li>
+                                <li class="addLinks__link"><a
+                                        href="#">отзывы</a></li>
+                                <li class="addLinks__link"><a
+                                        href="#">контакты</a></li>
+                                <li class="addLinks__link"><a
+                                        href="#">доставка</a></li>
+                            </ul>
+                            <ul
+                                class="addLinks__column cell-5 cell-10-md push-1-md">
+                                <li class="addLinks__title">Ателье и шоурум
+                                    находятся по
+                                    адресу:</li>
+                                <li class="addLinks__link">Москва, Большой
+                                    Козихинский
+                                    переулок, 22/2, офис 49 <a class="link-tel"
+                                        href="tel:+7 (499) 703 05 10"> +7 (499)
+                                        703 05
+                                        10</a></li>
+                                <li class="addLinks__link">Москва, Метро
+                                    Павелецкая, ул.
+                                    Кожевническая, д. 1 с1, офис 603
+                                    <a class="link-tel"
+                                        href="tel:+7 (499) 703 05 10">
+                                        +7
+                                        (499) 703 05 10</a></li>
+                                <li class="addLinks__link">Москва, Ветошный
+                                    переулок, д.
+                                    9.
+                                    ТЦ Никольский Пассаж, 5 этаж
+                                    <a class="link-tel"
+                                        href="tel:+7 (499) 703 05 10">
+                                        +7
+                                        (499) 703 05 10</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <footer class="divaloreFooter" data-aos="fade-in">
+                <div class="footer__map"
+                    style="background: url('divalore_files/map-1.jpg') no-repeat center center / cover transparent;">
+                    <a href="https://yandex.ru/maps/213/moscow/?ll=37.638649%2C55.760358&mode=usermaps&source=constructorLink&um=constructor%3A060465f5c3858a6b9bf60c9f946a3f4353d829d681e100cf5f02fd1f41258b24&z=12"
+                        class="filter" target="_blank"
+                        rel="noopener noreferrer"></a>
+                    <div class="footer-map_container ">
+                        <script type="text/javascript" charset="utf-8" async
+                            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A060465f5c3858a6b9bf60c9f946a3f4353d829d681e100cf5f02fd1f41258b24&amp;width=100%25&amp;height=490&amp;lang=ru_RU&amp;scroll=true"></script>
                     </div>
                 </div>
-            </section>
-        </div> 
-        <footer class="divaloreFooter" data-aos="fade-in">
-            <div class="footer__map"
-                style="background: url('divalore_files/map-1.jpg') no-repeat center center / cover transparent;">
-                <a href="https://yandex.ru/maps/213/moscow/?ll=37.638649%2C55.760358&mode=usermaps&source=constructorLink&um=constructor%3A060465f5c3858a6b9bf60c9f946a3f4353d829d681e100cf5f02fd1f41258b24&z=12" class="filter" target="_blank" rel="noopener noreferrer"></a>
-                <div class="footer-map_container ">
-                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A060465f5c3858a6b9bf60c9f946a3f4353d829d681e100cf5f02fd1f41258b24&amp;width=100%25&amp;height=490&amp;lang=ru_RU&amp;scroll=true"></script>
-                </div>
-            </div>
 
-            <div class="divaloreFooter_container container">
-                <div class="row">
-                    <div class="cell-4 cell-6-md cell-12-sm">
-                        <p class="column__name">оплата</p>
-                        <img src="divalore_files/pay.png" alt="">
-                        <span>
-                            <!-- <i class="visa_icon"></i><i class="visa_icon"></i><i
+                <div class="divaloreFooter_container container">
+                    <div class="row">
+                        <div class="cell-4 cell-6-md cell-12-sm">
+                            <p class="column__name">оплата</p>
+                            <img src="divalore_files/pay.png" alt="">
+                            <span>
+                                <!-- <i class="visa_icon"></i><i class="visa_icon"></i><i
                                 class="visa_icon"></i><i class="visa_icon"></i><i
                                 class="visa_icon"></i><i class="visa_icon"></i> -->
-                        </span>
+                            </span>
+                        </div>
+                        <div class="cell-4 cell-6-md cell-12-sm">
+                            <p class="column__name">мы в соцсетях</p>
+                            <a class="icon-soc"><i class="fab fa-instagram"
+                                    aria-hidden="true"></i> </a>
+                            <a class="icon-soc"><i class="fab fa-facebook"
+                                    aria-hidden="true"></i> </a>
+                            <a class="icon-soc"><i class="fab fa-vk"
+                                    aria-hidden="true"></i> </a>
+                        </div>
+                        <div class="cell-4 cell-6-md cell-12-sm">
+                            <p class="column__name">whats app чат</p>
+                            <a href="tel:+7 (915) 412 42 00"
+                                class="icon-whatsup-chat"><i
+                                    class="whatsup_icon"></i>
+                                +7 (915) 412 42 00
+                            </a>
+                        </div>
                     </div>
-                    <div class="cell-4 cell-6-md cell-12-sm">
-                        <p class="column__name">мы в соцсетях</p>
-                        <a class="icon-soc"><i class="fab fa-instagram"
-                                aria-hidden="true"></i> </a>
-                        <a class="icon-soc"><i class="fab fa-facebook"
-                                aria-hidden="true"></i> </a>
-                        <a class="icon-soc"><i class="fab fa-vk"
-                                aria-hidden="true"></i> </a>
+                    <div class="row">
+                        <span>Copyright © 2020 DiValore Все права защищены.
+                            Powered by
+                        </span> <a class="underline" style="padding: 0 5px;"
+                            href="https://idbi.ru/" target="_blank"
+                            rel="noopener noreferrer">IDBI</a>
                     </div>
-                    <div class="cell-4 cell-6-md cell-12-sm">
-                        <p class="column__name">whats app чат</p>
-                        <a href="tel:+7 (915) 412 42 00"
-                            class="icon-whatsup-chat"><i class="whatsup_icon"></i>
-                            +7 (915) 412 42 00
-                        </a>
-                    </div>
+                    <div class="js-to-top"></div>
                 </div>
-                <div class="row">
-                    <span>Copyright © 2020 DiValore Все права защищены. Powered by
-                    </span> <a class="underline" style="padding: 0 5px;"
-                        href="https://idbi.ru/" target="_blank" rel="noopener noreferrer">IDBI</a>
-                </div>
-                <div class="js-to-top"></div>
-            </div>
-            <script src="divalore_files/jquery.js"></script>
-            <script src="divalore_files/swiper.min.js"></script>
-            <script src="divalore_files/aos.js"></script>
-            <script>
-                AOS.init({
-                    easing: 'ease-in-out-sine', 
-                    once: true 
-                });
-            </script>
-            <script src="divalore_files/mmenu-light.js"></script>
-            <script>
-                var menu = new MmenuLight(
-                    document.querySelector( '#menu' ),
-                    'all'
-                );
+                <script src="divalore_files/jquery.js"></script>
+                <script src="divalore_files/swiper.min.js"></script>
+                <script src="divalore_files/aos.js"></script>
+                <script>
+                    AOS.init({
+                        easing: 'ease-in-out-sine',
+                        once: true
+                    });
+                </script>
+                <script src="divalore_files/mmenu-light.js"></script>
+                <script>
+                    var menu = new MmenuLight(
+                        document.querySelector('#menu'),
+                        'all'
+                    );
 
-                var navigator = menu.navigation({
-                    // selectedClass: 'Selected',
-                    // slidingSubmenus: true,
-                    // theme: 'dark',
-                    // title: 'Menu'
-                });
-
-                var drawer = menu.offcanvas({
-                    // position: 'left'
-                });
-
-                //	Open the menu.
-                document.querySelector( 'a[href="#menu"]' )
-                    .addEventListener( 'click', evnt => {
-                        evnt.preventDefault();
-                        drawer.open();
+                    var navigator = menu.navigation({
+                        // selectedClass: 'Selected',
+                        // slidingSubmenus: true,
+                        // theme: 'dark',
+                        // title: 'Menu'
                     });
 
-            </script>
-            <script src="divalore_files/divalore.js"></script>
+                    var drawer = menu.offcanvas({
+                        // position: 'left'
+                    });
 
-            <script>
+                    //	Open the menu.
+                    document.querySelector('a[href="#menu"]')
+                        .addEventListener('click', evnt => {
+                            evnt.preventDefault();
+                            drawer.open();
+                        });
 
-            </script>
-        </footer>
+                </script>
+                <script src="divalore_files/divalore.js"></script>
+
+                <script> 
+
+                </script>
+            </footer>
+        </div>
     </div>
-</div>
 
 </body>
 
