@@ -222,7 +222,7 @@ button:hover, input[type="submit"]:hover, a:not(.no-transparent):hover {
 }
 
 .divaloreHeader__icon.search {
-    background: url("icon-1-search..svg") no-repeat center center transparent;
+    background: url("icon-1-search.svg") no-repeat center center transparent;
 }
 
 .divaloreHeader__icon.favorites {
