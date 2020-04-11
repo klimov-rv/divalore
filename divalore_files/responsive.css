@@ -14,7 +14,7 @@
 }
 
 @media screen and (max-width: 1500px) {
-    .main-wrapper { 
+    .main-wrapper {
         padding: 0 15px;
     }
     .greeting::before {
@@ -45,6 +45,10 @@
         width: 100%;
         height: 100%;
         padding: 0 0 150% 0;
+    }
+    .acessory .product-img__relative {  
+        height: auto; 
+        padding: 0 0 100% 0;
     }
     .product-img__relative .product-img {
         position: absolute;
@@ -80,7 +84,7 @@
     }
     .tabcontent .product__list {
         flex-wrap: nowrap;
-    } 
+    }
     #rel_products .product__list {
         flex-wrap: nowrap;
     }
@@ -107,6 +111,11 @@
         position: relative;
         right: -90vw;
         bottom: -10px;
+    }
+    .collection-filter-and-sort {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        padding-bottom: 15px;
     }
 }
 
@@ -262,9 +271,29 @@
     .gallery .gallery__item {
         margin: 0;
         margin-bottom: 10px;
-    } 
+    }
     .product__grid_footer .half_right {
         padding-left: 0px;
+    }
+    .collection-size-and-pagination { 
+        flex-wrap: wrap;
+    }
+    .collection-size-and-pagination .pagination {
+        flex-grow: 1;
+        justify-content: center;
+    }
+    .collection-size .page_size-radio {
+        margin: 0 9px 0 9px;
+    }
+    .catalog__text {
+        padding: 45px 0;
+    }
+    .catalog__text_capton {
+        padding: 0 0 30px;
+    }
+    .catalog__header {
+        padding: 9px 0 20px;
+        font-size: 21px;
     }
 }
 
@@ -307,11 +336,17 @@
     .item__act button {
         background-position: center right;
     }
+    .catalog__header {
+        padding: 3px 0 15px;
+    }
 }
 
 @media screen and (max-width: 768px) {
     .header-wrapper {
         padding-bottom: 0;
+    }
+    .divaloreHeader__logo { 
+        font-size: 35px;
     }
     .main-wrapper {
         margin-top: 55px;
@@ -513,13 +548,15 @@
     .instagram__input {
         margin-top: 15px;
     }
-    .instagram .button1 { 
+    .instagram .button1 {
         margin-bottom: 15px;
     }
-    #gallery__slider,
-    #rel_products {
+    #gallery__slider, #rel_products {
         left: 0;
         width: 100%;
+    }
+    .collection-filter-and-sort .collection-filter {
+        flex-wrap: wrap;
     }
 }
 
@@ -529,7 +566,6 @@
         padding-right: 10px;
     }
     .divaloreHeader__logo {
-        font-size: 35px;
         text-align: center;
     }
     .main-slider .swiper-slide {
@@ -580,6 +616,9 @@
     .topline {
         padding-top: 0;
     }
+    .template-is-collection .topline {
+        padding-top: 10px;
+    }
     .summary__wrap {
         height: auto;
     }
@@ -590,6 +629,11 @@
     }
     .half_right .half__img_framing {
         padding: 27px;
+    }
+    
+    .catalog__header {
+        padding: 9px 0 20px;
+        font-size: 19px;
     }
 }
 
@@ -650,5 +694,10 @@
     }
     .item__var_value {
         align-self: flex-start;
+    }
+    .filters-clear {
+        text-align: right;
+        flex-basis: 100%;
+        margin-right: 0;
     }
 }

@@ -41,6 +41,11 @@ textarea {
 }
 
 
+li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
 
 /* line 54, variables.scss.liquid */
 input::placeholder {
